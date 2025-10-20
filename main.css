@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: #7d7b7b;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 70%;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 0 0 70px 70px;
+  opacity: 1;
+}
+
+.barraPesquisa {
+  width: 400px;
+  height: 50px;
+  padding-left: 20px;
+  background-color: #FEF1D8;
+  border-radius: 20px;
+  border: 2px solid #C49F00;
+}
+
+.cabecalho img {
+  padding-left: 20px;
+  width: 5%;
+}
+
+/* {
+  flex: 1;
+} */
+
+/* empura o footer com isso */
+
+footer {
+  background-color: #5F0000;
+  color: #f5f5f5;
+  padding: 100px 40px;
+}
+
+.itens {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.logoFooter {
+  width: 250px;
+  margin-right: 40px;
+}
+
+.contato ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contato li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.contato li img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.creditos {
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  margin-top: 70px;
+}
