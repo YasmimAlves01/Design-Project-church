@@ -27,7 +27,7 @@ header {
   opacity: 1;
 }
 
-.barraPesquisa {
+#barraPesquisa {
   width: 400px;
   height: 50px;
   padding-left: 20px;
@@ -56,7 +56,7 @@ footer {
   padding: 100px 40px;
 }
 
-.itens {
+footer div:first-of-type {
   width: 90%;
   display: flex;
   align-items: center;
@@ -64,7 +64,7 @@ footer {
   gap: 30px;
 }
 
-.logoFooter {
+footer div img {
   width: 300px;
   margin-right: 40px;
 }
@@ -87,7 +87,7 @@ footer div ul li img {
   margin-right: 10px;
 }
 
-.creditos {
+footer div:last-of-type {
   text-align: center;
   font-size: 22px;
   color: #fff;
