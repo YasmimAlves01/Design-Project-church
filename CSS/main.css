@@ -14,7 +14,7 @@ body {
   background-color: #7d7b7b;
 }
 
-.cabecalho {
+header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -36,7 +36,7 @@ body {
   border: 2px solid #C49F00;
 }
 
-.cabecalho img {
+header img {
   padding-left: 20px;
   width: 5%;
 }
@@ -49,6 +49,9 @@ body {
 
 footer {
   background-color: #5F0000;
+  background-image: url("../img/footerBG.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
   color: #f5f5f5;
   padding: 100px 40px;
 }
@@ -66,20 +69,20 @@ footer {
   margin-right: 40px;
 }
 
-.contato ul {
+footer div ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.contato li {
+footer div ul li {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
   font-size: 20px;
 }
 
-.contato li img {
+footer div ul li img {
   width: 25px;
   margin-right: 10px;
 }
