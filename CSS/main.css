@@ -49,14 +49,14 @@ header img {
 
 footer {
   background-color: #5F0000;
-  background-image: url("../img/footerBG.png");
+  background-image: url("img/footerBG.png");
   background-position: right bottom;
   background-repeat: no-repeat;
   color: #f5f5f5;
   padding: 100px 40px;
 }
 
-footer div:first-of-type {
+footer address:first-of-type {
   display: flex;
   align-items: center;
   gap: 30px;
@@ -64,30 +64,30 @@ footer div:first-of-type {
   width: 90%;
 }
 
-footer div img {
+footer address img {
   margin-right: 40px;
   width: 300px;
 }
 
-footer div ul {
+footer address ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-footer div ul li {
+footer address ul li {
   display: flex;
   align-items: center;
   font-size: 20px;
   margin-bottom: 20px;
 }
 
-footer div ul li img {
+footer address ul li img {
   margin-right: 10px;
   width: 25px;
 }
 
-footer div:last-of-type {
+footer address:last-of-type {
   color: #fff;
   font-size: 22px;
   margin-top: 70px;

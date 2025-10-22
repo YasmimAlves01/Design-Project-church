@@ -12,7 +12,7 @@
     <input type="text" id="barraPesquisa" placeholder="Digite o que você está buscando">
   </header>
   <footer>
-    <div>
+    <address>
       <img src="img/logoIgreja.png" alt="Logo Igreja São Jorge">
         <ul>
           <li><img src="img/instagram.png" alt="Logo instagram">igrejaortodoxasaojorge323</li>
@@ -20,11 +20,9 @@
           <li><img src="img/telephone.png" alt="Icone de telefone">(13) 99732-9315</li>
           <li><img src="img/envelope.png" alt="Icone de e-mail">secretariasaojorge@outlook.com</li>
         </ul>
-    </div>
-    <div>
-      <p>Feito por:</p>
-      <p>Gabriel da Cunha | Giulia de Moura | Kauê Santos | Yasmim de Castro | Yasmim Rodrigues</p>
-    </div>
+    <address>
+    <p>Feito por:</p>
+    <p>Gabriel da Cunha | Giulia de Moura | Kauê Santos | Yasmim de Castro | Yasmim Rodrigues</p>
   </footer>
 </body>
 </html>

@@ -1,0 +1,24 @@
+a {
+  text-decoration: none;
+}
+
+section article {
+  display: flex;
+  justify-content: center;
+}
+
+figure {
+  background-color: #f0dbb9;
+  margin: 20px;
+}
+
+section:first-of-type article figure {
+  height: 573px;
+  width: 414px;
+}
+
+section:nth-of-type(2) article figure,
+section:nth-of-type(3) article figure {
+  height: 424px;
+  width: 358px;
+}
