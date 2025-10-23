@@ -5,18 +5,21 @@
 }
 
 body {
-  background-color: #7d7b7b;
+  background-color: #FDF5EC;
 }
 
 nav {
-  background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(34px);
+  box-shadow: 0px 2px 6px 0px #00000040;
   border-radius: 0 0 50px 50px;
+  border: 1px solid #F7F7F724;
+  background: #22202D30;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px 0 20px;
-  opacity: 1;
+  position: fixed;
+  width: 100%;
 }
 
 #barraPesquisa {
@@ -38,7 +41,7 @@ nav img {
 
 footer {
   background-color: #5F0000;
-  background-image: url("img/footerBG.png");
+  background-image: url("/img/footerBG.png");
   background-position: right bottom;
   background-repeat: no-repeat;
   color: #f5f5f5;
