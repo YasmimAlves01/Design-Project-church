@@ -4,48 +4,37 @@
   margin: 0;
 }
 
-html, body {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
 body {
   background-color: #7d7b7b;
 }
 
-header {
+nav {
   background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  border-radius: 0 0 70px 70px;
+  backdrop-filter: blur(34px);
+  border-radius: 0 0 50px 50px;
   display: flex;
   align-items: center;
-  flex-direction: row;
-  gap: 70%;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
   opacity: 1;
-  padding: 20px;
 }
 
 #barraPesquisa {
-  height: 50px;
-  background-color: #FEF1D8;
-  border: 2px solid #C49F00;
+  width: 422px;
+  height: 57px;
+  background-color: #FFF;
+  border: 1px solid #C49F00;
   border-radius: 20px;
   padding-left: 20px;
-  width: 400px;
+  font-size: 20px;
+  color: #747474;
+  /* font-family: Centaur;  Baixar a fonte depois*/
 }
 
-header img {
-  padding-left: 20px;
-  width: 5%;
+nav img {
+  width: 136px;
+  height: 138px;
 }
-
-/* {
-  flex: 1;
-} */
-
-/* empura o footer com isso */
 
 footer {
   background-color: #5F0000;
