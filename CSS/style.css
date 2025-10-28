@@ -2,28 +2,6 @@ a {
     text-decoration: none;
 }
 
-header {
-    background: url("/img/headerBG.png") center/cover no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-    height: 100vh;
-}
-
-h1 {
-    font-size: 100px;
-    text-align: center;
-    /* font-family: "Baskerville Old Face"; Baixar a fonte depois*/
-}
-
-h2 {
-    text-align: center;
-    font-size: 128px;
-    /* font-family: "Baskerville Old Face"; Baixar a fonte depois*/
-}
-
 /* card santo do dia inicio */
 
 section:first-of-type {
@@ -64,7 +42,7 @@ section:first-of-type {
 
 /* card santo do dia fim */
 
-/* servicos inicio*/
+/* arquidocese & servicos & catedral inicio*/
 section article {
     display: flex;
     justify-content: center;
@@ -81,6 +59,7 @@ figure {
     background-color: #f0DBB9;
     color: #000;
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 section:nth-of-type(2) {
@@ -88,9 +67,17 @@ section:nth-of-type(2) {
 }
 
 section:nth-of-type(2) article figure,
-section:nth-of-type(3) article figure {
+section:nth-of-type(3) article figure,
+section:nth-of-type(4) article figure {
     width: 400px;
     border: 4px solid #5F0000;
+}
+
+section:nth-of-type(2) figure:hover,
+section:nth-of-type(4) figure:hover
+{
+    transform: scale(1.02);
+    transition: transform 0.5s;
 }
 
 section:nth-last-of-type(3) img {
@@ -108,7 +95,7 @@ section:nth-last-of-type(3) p {
     font-size: 20px;
 }
 
-section:nth-last-of-type(3) button {
+section:nth-last-of-type(3) a {
     width: 200px;
     padding: 10px;
     border-radius: 15px;
@@ -119,15 +106,16 @@ section:nth-last-of-type(3) button {
     text-align: center;
 }
 
+section:nth-last-of-type(3) a:hover
+{
+    transform: scale(1.05);
+    transition: transform 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
-/* servicos fim*/
+/* arquidocesee & servicos & catedral fim*/
 
 /* === CATEDRAL === */
-h2 {
-    text-align: center;
-    font-size: 128px;
-    /* font-family: "Baskerville Old Face"; */
-}
 
 section:nth-of-type(5){
     height: 800px;
@@ -156,4 +144,11 @@ section:nth-of-type(5) a{
     color: #fff;
     border-radius: 5vw;
     text-align: center;
+}
+
+section:nth-of-type(5) a:hover
+{
+    box-shadow: #f4d96021 0px 3px 8px;
+    transform: scale(1.02);
+    transition: transform 0.5s;
 }

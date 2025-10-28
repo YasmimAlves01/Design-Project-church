@@ -1,0 +1,37 @@
+
+main{
+    margin: 50px 50px;
+}
+
+h3
+{
+    font-size: 90px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h4
+{
+    font-size: 40px;
+}
+
+p
+{
+    font-size: 27px;
+}
+
+main>section:first-of-type p
+{
+    font-size: 30px;
+    text-align: center;
+}
+
+div:first-of-type
+{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+    
+
+        
