@@ -5,6 +5,7 @@
 }
 
 body {
+  background-image: url(/img/fundo.jpg);
   background-color: #FDF5EC;
 }
 
@@ -61,9 +62,21 @@ nav {
   /* font-family: Centaur;  Baixar a fonte depois*/
 }
 
+#barraPesquisa:hover
+{
+  box-shadow: #f4d96036 0px 5px 8px;
+  transition: transform 0.5s;
+}
+
 nav img {
   width: 136px;
   height: 138px;
+}
+
+nav img:hover
+{
+  transform: scale(1.02);
+  transition: transform 0.5s;
 }
 
 footer {
@@ -107,7 +120,7 @@ footer address ul li img {
   margin-right: 10px;
 }
 
-footer .creditos {
+footer div {
   text-align: center;
   color: #fff;
   font-size: 22px;
