@@ -69,7 +69,7 @@ section:nth-of-type(2) {
 section:nth-of-type(2) article figure,
 section:nth-of-type(3) article figure,
 section:nth-of-type(4) article figure {
-    width: 400px;
+    width: 300px;
     border: 4px solid #5F0000;
 }
 
