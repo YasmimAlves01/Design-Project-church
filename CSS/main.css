@@ -3,14 +3,14 @@
 
 @font-face {
   font-family: 'Baskervville Old Face';
-  src: url('/fonts/baskerville-old-face.ttf') format('ttf');
+  src: url('/assets/fonts/baskerville-old-face.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Centaur';
-  src: url('/fonts/centaur.ttf') format('ttf');
+  src: url('/assets/fonts/centaur.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -22,12 +22,12 @@
 }
 
 body {
-  background-image: url(/img/fundo.jpg);
+  background-image: url(/assets/img/fundo.jpg);
   background-color: #FDF5EC;
 }
 
 header {
-  background: url("/img/headerBG.png") center/cover no-repeat;
+  background: url("/assets/img/headerBG.png") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +65,7 @@ nav {
   padding: 0 20px 0 20px;
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
 }
 
 #barraPesquisa {
