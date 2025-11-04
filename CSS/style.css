@@ -2,6 +2,16 @@ a {
     text-decoration: none;
 }
 
+header h1{
+    font-size: 5rem;
+    font-weight: 400;
+    margin-top: 10%;
+}
+
+header p{
+    font-size: 2rem;
+}
+
 /* Card Santo do Dia */
 section:first-of-type {
     margin-top: 50px;
@@ -11,7 +21,8 @@ section:first-of-type {
 }
 
 section:first-of-type figure {
-    width: 95%;
+    width: 90%;
+    height: 650px;
     background-color: #3E1600;
     color: #fff;
     display: flex;
@@ -21,11 +32,16 @@ section:first-of-type figure {
     gap: 100px;
     padding: 50px;
     border-radius: 50px;
+    background-image: url(/assets/img/image\ 3.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+   
 }
 
 section:first-of-type figure img {
-    width: 402px;
-    height: 590px;
+    width: 380px;
+    height: 490px;
 }
 
 section:first-of-type figcaption {
@@ -35,13 +51,15 @@ section:first-of-type figcaption {
 }
 
 section:first-of-type figcaption h1 {
-    font-size: 96px;
+    font-size: 5rem;
+    font-weight: 200;
     font-family: "Baskerville Old Face";
 }
 
 section:first-of-type figcaption p {
-    font-size: 40px;
-    font-family: "Baskerville Old Face";
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: "Centaur";
 }
 
 @media (max-width: 1000px) {
@@ -52,6 +70,14 @@ section:first-of-type figcaption p {
 /* =======================================*/
 
 /* Arquidocese */
+
+section h2{
+    font-size: 7.5rem;
+    font-weight: 300;
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+
 section article {
     display: flex;
     justify-content: center;
@@ -124,10 +150,16 @@ section:nth-of-type(3) article figure a{
     font-weight: 700;
     font-size: 24px;
     color: #F4D860;
-    padding: 20px 50px;
+    padding: 10px 45px;
     background-color: #22202D;
     box-shadow: 0px 2px 6px 0px #00000040;
     border-radius: 17px;
+}
+
+section:nth-of-type(3) article figure a:hover{
+    background-color: #F4D860;
+    color: #22202D;
+    transition: 1.05s;
 }
 /*=======================================*/
 
@@ -162,19 +194,23 @@ section:nth-of-type(5){
     gap: 100px;
     flex-direction: column;
     color: #FFF;
+    margin-top: 17%;
+    margin-bottom: 17%;
 }
 
 section:nth-of-type(5) h1{
     text-align: center;
     font-weight: 400;
-    font-size: 128px;
+    font-size: 7rem;
     font-family: "Baskerville Old Face";
 }
 
 section:nth-of-type(5) h2{
     text-align: center;
-    font-size: 60px;
+    font-size: 4rem;
     font-weight: 400;
+    width: 70%;
+    margin-top: 0%;
     font-family: "Centaur";
 }
 
@@ -194,7 +230,8 @@ section:nth-of-type(5) a:hover
 {
     box-shadow: #f4d96021 0px 3px 8px;
     transform: scale(1.02);
-    transition: transform 0.5s;
+    transition: transform 1s;
+    color:#F4D860
 }
 /*=======================================*/
 
