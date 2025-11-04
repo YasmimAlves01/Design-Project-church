@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap");
 
 @font-face {
-  font-family: 'Baskervville Old Face';
-  src: url('/assets/fonts/baskerville-old-face.ttf') format('ttf');
+  font-family: "Baskervville Old Face";
+  src: url("/assets/fonts/baskerville-old-face.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Centaur';
-  src: url('/assets/fonts/centaur.ttf') format('ttf');
+  font-family: "Centaur";
+  src: url("/assets/fonts/centaur.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -23,7 +24,7 @@
 
 body {
   background-image: url(/assets/img/fundo.jpg);
-  background-color: #FDF5EC;
+  background-color: #fdf5ec;
 }
 
 header {
@@ -39,13 +40,24 @@ header {
 h1 {
   font-size: 100px;
   text-align: center;
-   font-family: "Baskerville Old Face";
+  font-family: "Baskerville Old Face";
 }
 
 h2 {
-    text-align: center;
-    font-size: 128px;
-    font-family: "Baskerville Old Face";
+  text-align: center;
+  font-size: 128px;
+  font-family: "Baskerville Old Face";
+}
+
+h3 {
+  font-family: "Baskerville Old Face";
+  font-size: 90px;
+  text-align: center;
+}
+
+h4 {
+  font-family: "Baskerville Old Face";
+  font-size: 40px;
 }
 
 header p {
@@ -57,8 +69,8 @@ nav {
   backdrop-filter: blur(34px);
   box-shadow: 0px 2px 6px 0px #00000040;
   border-radius: 0 0 50px 50px;
-  border: 1px solid #F7F7F724;
-  background: #22202D30;
+  border: 1px solid #f7f7f724;
+  background: #22202d30;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,8 +83,8 @@ nav {
 #barraPesquisa {
   width: 422px;
   height: 57px;
-  background-color: #FFF;
-  border: 1px solid #C49F00;
+  background-color: #fff;
+  border: 1px solid #c49f00;
   border-radius: 20px;
   padding-left: 20px;
   font-size: 20px;
@@ -80,8 +92,7 @@ nav {
   font-family: Centaur;
 }
 
-#barraPesquisa:hover
-{
+#barraPesquisa:hover {
   box-shadow: #f4d96036 0px 5px 8px;
   transition: transform 0.5s;
 }
@@ -91,14 +102,13 @@ nav img {
   height: 138px;
 }
 
-nav img:hover
-{
+nav img:hover {
   transform: scale(1.02);
   transition: transform 0.5s;
 }
 
 footer {
-  background-color: #5F0000;
+  background-color: #5f0000;
   background-image: url("/img/footerBG.png");
   background-position: right bottom;
   background-repeat: no-repeat;
@@ -136,7 +146,7 @@ footer address ul li img:first-child {
   height: 50px;
 }
 
-footer div p{
+footer div p {
   text-align: center;
   color: #fff;
   font-size: 32px;
@@ -156,7 +166,8 @@ footer div p{
     width: 417px;
     height: 420px;
   }
-  footer, footer address {
+  footer,
+  footer address {
     flex-direction: column;
   }
   footer address ul li {

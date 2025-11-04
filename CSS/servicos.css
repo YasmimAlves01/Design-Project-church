@@ -1,57 +1,66 @@
-
-main{
-    margin: 50px 50px;
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 70px;
 }
 
-main h3
-{
-    font-size: 90px;
-    margin-bottom: 20px;
-    text-align: center;
+main p {
+  font-family: "Centaur";
+  font-size: 27px;
 }
 
-main h4
-{
-    font-size: 40px;
-    margin-bottom: 10px;
+main section:first-of-type p {
+  text-align: center;
 }
 
-main h5
-{
-    font-size: 35px;
-    margin-bottom: 5px;
+main section:nth-of-type(2) {
+  display: flex;
 }
 
-main p
-{
-    font-size: 27px;
-    margin-bottom: 25px;
+main article p {
+  margin-bottom: 30px;
 }
 
-ul
-{
-    margin: 0 0 25px 25px;
+main section figure img {
+  width: 431px;
+  height: 528px;
 }
 
-li
-{
-    font-size: 27px;
+main ol {
+  list-style-type: none;
+  counter-reset: item;
+  margin: 0;
+  padding: 0;
 }
 
-main>section:first-of-type p
-{
-    font-size: 30px;
-    text-align: center;
+main li {
+  font-family: "Abhaya Libre";
+  font-size: 27px;
+  line-height: 25px;
+  font-weight: bold;
 }
 
-div:first-of-type
-{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
+main ol > li p {
+  font-weight: normal;
 }
 
-div p
-{
-    margin: 0 25px 25px 0;
-}   
+main ol > li {
+  display: table;
+  counter-increment: item;
+  margin-bottom: 0.6em;
+}
+
+main ol > li:before {
+  content: counters(item, ".") ". ";
+  display: table-cell;
+  padding-right: 0.6em;
+}
+
+main li ol > li {
+  margin: 0;
+}
+
+main li ol > li:before {
+  content: counters(item, ".") " ";
+}
