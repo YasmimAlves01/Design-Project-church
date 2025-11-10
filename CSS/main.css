@@ -134,12 +134,14 @@ footer address ul {
   list-style: none;
 }
 
-footer address ul li {
+footer address ul li a {
   display: flex;
   align-items: center;
+  text-decoration: none;
   font-size: 30px;
   margin-bottom: 20px;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: #fff;
 }
 
 footer address ul li img:first-child {
