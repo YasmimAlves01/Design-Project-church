@@ -5,20 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Igreja Católica Apostólica Ortodoxa São Jorge</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="/script/slider.js"></script>
 </head>
 <body>
-  <nav>
-    <img src="assets/img/logoIgreja.png" alt="Logo Igreja São Jorge">
-    <input type="text" id="barraPesquisa" placeholder="Digite o que você está buscando">
-  </nav>
+  <header>
+    <nav>
+      <a href="home.html" id="logo"><h1>Logo Igreja São Jorge</h1></a>
+      <ul>
+        <li><a href="#arquidocese">Arquidocese</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#catedral">Catedral</a></li>
+        <li><a href="#oracao">Oração</a></li>
+        <li><a href="#redes">Redes</a></li>
+      </ul>
+      <input type="text" id="barraPesquisa" placeholder="Digite o que você está buscando">
+    </nav>
+  </header>
   
 <!-- "header" titulo subtitulo e versiculo -->
-  <header>
+  <section>
     <h1>Igreja Católica Apostólica<br> Ortodoxa São Jorge</h1>
     <p>"Em Antioquia, pela primeira vez,<br> foram os discípulos chamados cristãos"<p>
     <p>Atos dos Apóstolos 11:26</p>
-  </header>
+  </section>
 
 <!-- card santa do dia -->
  <section>
@@ -32,7 +42,7 @@
 </section>
 
 <!-- section arquidocese -->
-  <section>
+  <section id="arquidocese">
     <h2>Arquidocese</h2>
     <article>
       <a href="#">
@@ -56,8 +66,10 @@
     </article>
   </section>
 
+  <a href="#logo"><img src="../assets/img/topo.png" alt="icone de topo" id="irtopo"></a>
+
 <!-- section servicos -->
-  <section>
+  <section id="servicos">
     <h2>Serviços</h2>
     <article>
         <figure>
@@ -112,7 +124,7 @@
 <!-- section galeria -->
 
 <!-- section catedral -->
-  <section>
+  <section id="catedral">
     <h2>Catedral</h2>
     <article>
       <a href="#">
@@ -157,13 +169,13 @@
   </section>
 
 <!-- section oracao -->
-  <section>
+  <section id="oracao">
     <h1>Peça Uma Oração</h1>
     <h2>Entre em contato, conte sua aflição e receba uma palavra ou oração do Padre Dimitrios Attarian</h2>
     <a href="#">Pedir Oração</a>
   </section>
 
-  <footer>
+  <footer id="redes">
     <address>
       <img src="assets/img/logoIgreja.png" alt="Logo Igreja São Jorge">
       <ul>

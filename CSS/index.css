@@ -2,25 +2,15 @@ a {
     text-decoration: none;
 }
 
-header h1{
-    font-size: 5rem;
-    font-weight: 400;
-    margin-top: 10%;
-}
-
-header p{
-    font-size: 2rem;
-}
-
 /* Card Santo do Dia */
-section:first-of-type {
+section:nth-of-type(2) {
     margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-section:first-of-type figure {
+section:nth-of-type(2) figure {
     width: 90%;
     height: 650px;
     background-color: #3E1600;
@@ -39,31 +29,31 @@ section:first-of-type figure {
    
 }
 
-section:first-of-type figure img {
+section:nth-of-type(2) figure img {
     width: 380px;
     height: 490px;
 }
 
-section:first-of-type figcaption {
+section:nth-of-type(2) figcaption {
     display: flex;
     gap: 20px;
     flex-direction: column;
 }
 
-section:first-of-type figcaption h1 {
+section:nth-of-type(2) figcaption h1 {
     font-size: 5rem;
     font-weight: 200;
     font-family: "Baskerville Old Face";
 }
 
-section:first-of-type figcaption p {
+section:nth-of-type(2) figcaption p {
     font-size: 2rem;
     font-weight: 300;
     font-family: "Centaur";
 }
 
 @media (max-width: 1000px) {
-  section:first-of-type figure{
+  section:nth-of-type(2) figure{
     flex-direction: column;
   }
 }
@@ -99,26 +89,26 @@ figure {
     border-radius: 15px;
 }
 
-section:nth-of-type(2) article a figure {
+section:nth-of-type(3) article a figure {
     width: 414px;
     height: 573px;
     border: 3px solid #5F0000;
 }
 
-section:nth-of-type(2) article figure figcaption {
+section:nth-of-type(3) article figure figcaption {
     text-align: center;
     font-size: 36px;
     color: #000;
     font-family: "Centaur";
 }
 
-section:nth-of-type(2) article figure img {
+section:nth-of-type(3) article figure img {
     width: 366px;
     height: 363px;
 }
 
-section:nth-of-type(2) article figure,
-section:nth-of-type(3) article figure {
+section:nth-of-type(3) article figure,
+section:nth-of-type(4) article figure {
     width: 358px;
     height: 424px;
     border: 4px solid #5F0000;
@@ -126,27 +116,27 @@ section:nth-of-type(3) article figure {
 /* =======================================*/
 
 /* Serviços */
-section:nth-of-type(3) article figure {
+section:nth-of-type(4) article figure {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-section:nth-of-type(3) article figure figcaption{
+section:nth-of-type(4) article figure figcaption{
     font-size: 32px;
     font-weight: 700;
     text-align: center;
     font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
-section:nth-of-type(3) article figure p{
+section:nth-of-type(4) article figure p{
     font-size: 24px;
     text-align: center;
     font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
-section:nth-of-type(3) article figure a{
+section:nth-of-type(4) article figure a{
     font-weight: 700;
     font-size: 24px;
     color: #F4D860;
@@ -156,7 +146,7 @@ section:nth-of-type(3) article figure a{
     border-radius: 17px;
 }
 
-section:nth-of-type(3) article figure a:hover{
+section:nth-of-type(4) article figure a:hover{
     background-color: #F4D860;
     color: #22202D;
     transition: 1.05s;
@@ -164,19 +154,19 @@ section:nth-of-type(3) article figure a:hover{
 /*=======================================*/
 
 /* Catedral */
-section:nth-of-type(4) article figure {
+section:nth-of-type(5) article figure {
     display: flex;
     width: 386px;
     height: 534px;
     border: 4px solid #5F0000;
 }
 
-section:nth-of-type(4) article figure img{
+section:nth-of-type(5) article figure img{
     width: 309px;
     height: 312px;
 }
 
-section:nth-of-type(4) article figcaption {
+section:nth-of-type(5) article figcaption {
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 36px;
     text-align: center;
@@ -185,7 +175,7 @@ section:nth-of-type(4) article figcaption {
 /*=======================================*/
 
 /* Oração */
-section:nth-of-type(5){
+section:nth-of-type(6){
     height: 1002px;
     background: url("/assets/img/fundopediroracao.png") center/cover no-repeat;
     display: flex;
@@ -198,14 +188,14 @@ section:nth-of-type(5){
     margin-bottom: 17%;
 }
 
-section:nth-of-type(5) h1{
+section:nth-of-type(6) h1{
     text-align: center;
     font-weight: 400;
     font-size: 7rem;
     font-family: "Baskerville Old Face";
 }
 
-section:nth-of-type(5) h2{
+section:nth-of-type(6) h2{
     text-align: center;
     font-size: 4rem;
     font-weight: 400;
@@ -214,7 +204,7 @@ section:nth-of-type(5) h2{
     font-family: "Centaur";
 }
 
-section:nth-of-type(5) a{
+section:nth-of-type(6) a{
     border: 1px solid #F7F7F724;
     background: #6464665b;
     backdrop-filter: blur(2px);
@@ -226,7 +216,7 @@ section:nth-of-type(5) a{
     font-family: "Baskerville Old Face";
 }
 
-section:nth-of-type(5) a:hover
+section:nth-of-type(6) a:hover
 {
     box-shadow: #f4d96021 0px 3px 8px;
     transform: scale(1.02);
@@ -241,22 +231,22 @@ section:nth-of-type(5) a:hover
         flex-direction: column;
         align-items: center;
     }
-    section:first-of-type figure {
+    section:nth-of-type(2) figure {
         gap: 40px;
     }
-    section:first-of-type figcaption h1 {
+    section:nth-of-type(2) figcaption h1 {
         font-size: 86px;
     }
-    section:nth-of-type(4) article figcaption {
+    section:nth-of-type(5) article figcaption {
         font-size: 26px;
     }
-    section:nth-of-type(5) h1 {
+    section:nth-of-type(6) h1 {
         font-size: 100px;
     }
-    section:nth-of-type(5) h2{
+    section:nth-of-type(6) h2{
         font-size: 40px;
     }
-    section:nth-of-type(5) a, section:first-of-type figcaption p{
+    section:nth-of-type(6) a, section:first-of-type figcaption p{
         font-size: 30px;
     }
 }

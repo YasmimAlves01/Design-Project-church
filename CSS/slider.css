@@ -1,0 +1,111 @@
+.galeria-header{
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 20px 0;
+}
+
+.galeria-header h2{
+    margin: 0;
+}
+
+.ver-mais{
+    position: absolute;
+    left: auto;    
+    right: 20vw;  
+    font-size: 25px;
+    text-decoration: underline;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.ver-mais:hover{
+    transform: scale(1.15);
+}
+
+
+.ver-mais:hover{
+    transform: scale(1.15);
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.carousel-slide {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.slide-item {
+    min-width: 60%;
+    flex-shrink: 0;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.slide-item.active {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+.slide-item:not(.active) {
+    transform: scale(0.9);
+    opacity: 0.85;
+}
+
+/* 📌 Efeito de blur nas laterais */
+.slide-item:not(.active) img {
+    filter: blur(4px);
+}
+
+.slide-item.active img {
+    filter: blur(0);
+}
+
+.slide-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Botões */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
+
+.carousel-dots {
+    text-align: center;
+    margin-top: 15px;
+}
+.dot {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #5F0000;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 4px;
+    cursor: pointer;
+}
+.dot.active {
+    background: #5F0000;
+}
