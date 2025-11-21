@@ -5,6 +5,21 @@ main {
   padding: 70px;
 }
 
+main h2
+{
+  font-size: 130px;
+}
+
+main section h3
+{
+  font-size: 90px;
+}
+
+main section h4
+{
+  font-size: 40px;
+}
+
 main p {
   font-family: "Centaur";
   font-size: 27px;
