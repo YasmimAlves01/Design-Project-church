@@ -212,7 +212,7 @@ section:nth-of-type(6) article figcaption {
 /* Oração */
 section:nth-of-type(7){
     height: 1002px;
-    background: url("/assets/img/fundopediroracao.png") center/cover no-repeat;
+    background: url("../img/fundopediroracao.png") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
