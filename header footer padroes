@@ -7,10 +7,21 @@
     <link rel="stylesheet" href="CSS/main.css">
 </head>
 <body>
-  <header>
-    <img src="img/logoIgreja.png" alt="Logo Igreja São Jorge">
-    <input type="text" id="barraPesquisa" placeholder="Digite o que você está buscando">
+   <header>
+    <nav>
+      <a href="home.html" id="logo"><h1>Logo Igreja São Jorge</h1></a>
+      <ul>
+        <li><a href="#arquidocese">Arquidocese</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href=".galeria-header">Galeria</a></li>
+        <li><a href="#catedral">Catedral</a></li>
+        <li><a href="#oracao">Oração</a></li>
+        <li><a href="#redes">Redes</a></li>
+      </ul>
+      <input type="text" id="barraPesquisa" placeholder="Digite o que você está buscando">
+    </nav>
   </header>
+  
   <footer>
     <address>
       <img src="assets/img/logoIgreja.png" alt="Logo Igreja São Jorge">
