@@ -1,79 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Igreja Católica Apostólica Ortodoxa São Jorge</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/CSS/slider.css">
-    <script src="script/slider.js"></script>
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="home.html" id="logo"><h1>Logo Igreja São Jorge</h1></a>
-      <ul>
-        <li><a href="#arquidocese">Arquidocese</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#catedral">Catedral</a></li>
-        <li><a href="#oracao">Oração</a></li>
-        <li><a href="#redes">Redes</a></li>
-      </ul>
-      <input type="text" id="barraPesquisa" placeholder="Digite o que você está buscando">
-    </nav>
-  </header>
-  
-<!-- "header" titulo subtitulo e versiculo -->
-  <section>
-    <h1>Igreja Católica Apostólica<br> Ortodoxa São Jorge</h1>
-    <p>"Em Antioquia, pela primeira vez,<br> foram os discípulos chamados cristãos"<p>
-    <p>Atos dos Apóstolos 11:26</p>
-  </section>
-
-<!-- card santa do dia -->
- <section>
-  <figure>
-    <img src="assets/img/doroteia.png" alt="">
-    <figcaption>
-      <h1>Santa Doroteia</h1>
-      <p>Santa Dorotéia, virgem e mártir da Capadócia (séc. IV), é conhecida como “a santa das flores”. Antes de morrer, enviou milagrosamente rosas e maçãs a um jovem que zombava de sua fé, convertendo-o.</p>
-    </figcaption>
-  </figure>
-</section>
-
-<!-- section arquidocese -->
-  <section id="arquidocese">
-    <h2>Arquidocese</h2>
-    <article>
-      <a href="Pages/arquidocese.html">
-        <figure>
-          <img src="assets/img/cards/arcebispoMetropolitano.png" alt="Foto do arcebispo metropolitano">
-          <figcaption>Arcebispo Metropolitano</figcaption>
-        </figure>
-      </a>
-      <a href="#">
-        <figure>
-          <img src="assets/img/cards/conselhoArquidiocesano.png" alt="Foto do conselho arquidiocesano">
-          <figcaption>Conselho Arquidiocesano</figcaption>
-        </figure>
-      </a>
-      <a href="#">
-        <figure>
-          <img src="assets/img/cards/nossasParoquias.png" alt="Foto das paroquias">
-          <figcaption>Nossas Paroquias</figcaption>
-        </figure>
-      </a>
-    </article>
-  </section>
-
-  <a href="#logo"><img src="assets/img/topo.png" alt="icone de topo" id="irtopo"></a>
-
-<!-- section servicos -->
-  <section id="servicos">
-    <h2>Serviços</h2>
-    <article>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="home.html" id="logo">
+        <img src="./assets/img/logoIgreja.png">
+        </a>
+        <!-- Botão do menu hambúrguer -->
+        <button class="hamburger" id="hamburgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+        </button>
+        <!-- Menu principal de navegação -->
+        <ul>
+          <li><a href="#arquidocese">Arquidocese</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#catedral">Catedral</a></li>
+          <li><a href="#oracao">Oração</a></li>
+          <li><a href="#redes">Redes</a></li>
+        </ul>
+        <!-- Barra de pesquisa -->
+        <input type="text" id="barraPesquisa" placeholder="Digite o que você está buscando">
+      </nav>
+    </header>
+    <!-- Seção inicial com título, subtítulo e versículo -->
+    <section>
+      <h1>Igreja Católica Apostólica<br> Ortodoxa São Jorge</h1>
+      <p>"Em Antioquia, pela primeira vez,<br> foram os discípulos chamados cristãos"</p>
+      <p>Atos dos Apóstolos 11:26</p>
+    </section>
+    <!-- Card: Santa do dia -->
+    <section>
+      <figure>
+        <img src="assets/img/doroteia.png" alt="">
+        <figcaption>
+          <h1>Santa Doroteia</h1>
+          <p>Santa Dorotéia, virgem e mártir da Capadócia (séc. IV), é conhecida como “a santa das flores”. Antes de morrer, enviou milagrosamente rosas e maçãs a um jovem que zombava de sua fé, convertendo-o.</p>
+        </figcaption>
+      </figure>
+    </section>
+    <!-- Seção: Arquidocese -->
+    <section id="arquidocese">
+      <h2>Arquidocese</h2>
+      <article>
+        <a href="Pages/arquidocese.html">
+          <figure>
+            <img src="assets/img/cards/arcebispoMetropolitano.png" alt="Foto do arcebispo metropolitano">
+            <figcaption>Arcebispo Metropolitano</figcaption>
+          </figure>
+        </a>
+        <a href="#">
+          <figure>
+            <img src="assets/img/cards/conselhoArquidiocesano.png" alt="Foto do conselho arquidiocesano">
+            <figcaption>Conselho Arquidiocesano</figcaption>
+          </figure>
+        </a>
+        <a href="#">
+          <figure>
+            <img src="assets/img/cards/nossasParoquias.png" alt="Foto das paroquias">
+            <figcaption>Nossas Paroquias</figcaption>
+          </figure>
+        </a>
+      </article>
+    </section>
+    <!-- Botão de voltar ao topo -->
+    <a href="#logo">
+    <img src="assets/img/topo.png" alt="icone de topo" id="irtopo">
+    </a>
+    <!-- Seção: Serviços -->
+    <section id="servicos">
+      <h2>Serviços</h2>
+      <article>
         <figure>
           <img src="assets/img/cards/batizados.png" alt="Icone para batizados">
           <figcaption>Batizados</figcaption>
@@ -86,8 +93,8 @@
           <p>Serviço de tal tal coisa, oferecido e tal tal</p>
           <a href="pages/casamentos.html">Ver mais</a>
         </figure>
-    </article>  
-    <article>
+      </article>
+      <article>
         <figure>
           <img src="assets/img/cards/misssasFunebres.png" alt="Icone para missas funebres">
           <figcaption>Missas Fúnebres</figcaption>
@@ -106,8 +113,8 @@
           <p>Serviço de tal tal coisa, oferecido e tal tal</p>
           <a href="pages/certidoes.html">Ver mais</a>
         </figure>
-    </article>
-    <article>
+      </article>
+      <article>
         <figure>
           <img src="assets/img/cards/trisagions.png" alt="Icone para trisagions funebres">
           <figcaption>Trisagions Fúnebres</figcaption>
@@ -120,110 +127,105 @@
           <p>Serviço de tal tal coisa, oferecido e tal tal</p>
           <a href="pages/profissionais.html">Ver mais</a>
         </figure>
-    </article>
-  </section>
+      </article>
+    </section>
+    <!-- Seção: Galeria -->
+    <section>
+      <h2>Galeria</h2>
+      <div class="slide-container">
 
-<!-- section galeria -->
-  <section>
-    <div>
-        <h2 id="galeria">Galeria</h2>
-        <a href="Pages/galeria.html" class="ver-mais">Ver mais</a>
-    </div>
-
-    <div class="carousel-container">
-        <div class="carousel-slide">
-            <div class="slide-item">
-                <img src="https://placehold.co/800x400" alt="450x250">
-            </div>
-            <div class="slide-item">
-                <img src="https://placehold.co/800x400" alt="450x250">
-            </div>
-            <div class="slide-item">
-                <img src="https://placehold.co/800x400" alt="450x250">
-            </div>
-            <div class="slide-item">
-                <img src="https://placehold.co/800x400" alt="450x250">
-            </div>
-            <div class="slide-item">
-                <img src="https://placehold.co/800x400" alt="450x250">
-            </div>
+        <!-- Full-width images with number and caption text -->
+        <div class="slide-item fade">
+          <img src="https://placehold.co/800x400?text=Slide+1">
         </div>
 
-        <button class="carousel-btn prev" id="prevBtn">&lt;</button>
-        <button class="carousel-btn next" id="nextBtn">&gt;</button>
-    </div>
+        <div class="slide-item fade">
+          <img src="https://placehold.co/800x400?text=Slide+2">
+        </div>
 
-    <div class="carousel-dots"></div>
-  </section>
+        <div class="slide-item fade">
+          <img src="https://placehold.co/800x400?text=Slide+3">
+        </div>
 
-<!-- section catedral -->
-  <section id="catedral">
-    <h2>Catedral</h2>
-    <article>
-      <a href="Pages/galeria.html">
-        <figure>
-          <img src="assets/img/cards/historico.png" alt="Foto da catedral">
-          <figcaption>Histórico da Catedral</figcaption>
-        </figure>
-      </a>
-      <a href="Pages/galeria.html">
-        <figure>
-          <img src="assets/img/cards/clero.png" alt="Foto do clero">
-          <figcaption>Clero</figcaption>
-        </figure>
-      </a>
-      <a href="Pages/galeria.html">
-        <figure>
-          <img src="assets/img/cards/conselhoadm.png" alt="Foto do Conselho Administrativo">
-          <figcaption>Conselho Administrativo</figcaption>
-        </figure>
-      </a>
-    </article>
-    <article>
-      <a href="Pages/galeria.html">
-        <figure>
-          <img src="assets/img/cards/missasDominicais.png" alt="Foto das missas">
-          <figcaption>Missas Dominicais</figcaption>
-        </figure>
-      </a>
-      <a href="Pages/galeria.html">
-        <figure>
-          <img src="assets/img/cards/atendimento.png" alt="Foto do interior da catedral">
-          <figcaption>Atendimento e Visitação</figcaption>
-        </figure>
-      </a>
-      <a href="Pages/galeria.html">
-        <figure>
-          <img src="assets/img/cards/salao.png" alt="Foto do salao de festa">
-          <figcaption>Salão de Festas</figcaption>
-        </figure>
-      </a>
-    </article>
-  </section>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
 
-<!-- section oracao -->
-  <section id="oracao">
-    <h1>Peça Uma Oração</h1>
-    <h2>Entre em contato, conte sua aflição e receba uma palavra ou oração do Padre Dimitrios Attarian</h2>
-    <a href="Pages/oracao.html">Pedir Oração</a>
-  </section>
-
-  <footer id="redes">
-    <address>
-      <img src="assets/img/logoIgreja.png" alt="Logo Igreja São Jorge">
-      <ul>
-        <li><a href="https://www.instagram.com/igrejaortodoxasaojorge323/"><img src="assets/img/instagram.png" alt="Logo instagram">igrejaortodoxasaojorge323</a></li>
-        <li><a href="https://www.google.com.br/maps/place/Av.+Ana+Costa,+323+-+Encruzilhada,+Santos+-+SP,+11060-001/@-23.9579287,-46.3340322,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce030d01896197:0x38d0ff3cd2ead4bc!8m2!3d-23.9579287!4d-46.3314573!16s%2Fg%2F11bw4k1598?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D"><img src="assets/img/loc.png" alt="Ícone de local">Av. Ana Costa, 323, Gonzaga, Santos, SP</a></li>
-        <li><a href="tel:+5513997329315"><img src="assets/img/telefone.png" alt="Ícone de telefone">(13) 99732-9315</a></li>
-        <li><a href="mailto:secretariasaojorge@outlook.com?subject=Contato%20pelo%20site&body=Olá,%20gostaria%20de%20mais%20informações."><img src="assets/img/email.png" alt="Ícone de e-mail">secretariasaojorge@outlook.com</a></li>
-      </ul>
-    </address>
-
-    <div>
-      <p>Feito por:</p>
-      <p>Gabriel da Cunha | Giulia de Moura | Kauê Santos | Yasmim de Castro | Yasmim Rodrigues</p>
-    </div>
-  </footer>
-
-</body>
+      <!-- The dots/circles -->
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+    <!-- Seção: Catedral -->
+    <section id="catedral">
+      <h2>Catedral</h2>
+      <article>
+        <a href="Pages/galeria.html">
+          <figure>
+            <img src="assets/img/cards/historico.png" alt="Foto da catedral">
+            <figcaption>Histórico da Catedral</figcaption>
+          </figure>
+        </a>
+        <a href="Pages/galeria.html">
+          <figure>
+            <img src="assets/img/cards/clero.png" alt="Foto do clero">
+            <figcaption>Clero</figcaption>
+          </figure>
+        </a>
+        <a href="Pages/galeria.html">
+          <figure>
+            <img src="assets/img/cards/conselhoadm.png" alt="Foto do Conselho Administrativo">
+            <figcaption>Conselho Administrativo</figcaption>
+          </figure>
+        </a>
+      </article>
+      <article>
+        <a href="Pages/galeria.html">
+          <figure>
+            <img src="assets/img/cards/missasDominicais.png" alt="Foto das missas">
+            <figcaption>Missas Dominicais</figcaption>
+          </figure>
+        </a>
+        <a href="Pages/galeria.html">
+          <figure>
+            <img src="assets/img/cards/atendimento.png" alt="Foto do interior da catedral">
+            <figcaption>Atendimento e Visitação</figcaption>
+          </figure>
+        </a>
+        <a href="Pages/galeria.html">
+          <figure>
+            <img src="assets/img/cards/salao.png" alt="Foto do salao de festa">
+            <figcaption>Salão de Festas</figcaption>
+          </figure>
+        </a>
+      </article>
+    </section>
+    <!-- Seção: Pedido de oração -->
+    <section id="oracao">
+      <h1>Peça Uma Oração</h1>
+      <h2>Entre em contato, conte sua aflição e receba uma palavra ou oração do Padre Dimitrios Attarian</h2>
+      <a href="Pages/oracao.html">Pedir Oração</a>
+    </section>
+    <!-- Rodapé -->
+    <footer id="redes">
+      <address>
+        <img src="assets/img/logoIgreja.png" alt="Logo Igreja São Jorge">
+        <ul>
+          <li><a href="https://www.instagram.com/igrejaortodoxasaojorge323/"><img src="assets/img/instagram.png" alt="Logo instagram">igrejaortodoxasaojorge323</a></li>
+          <li><a href="https://www.google.com.br/maps/place/Av.+Ana+Costa,+323+-+Encruzilhada,+Santos+-+SP,+11060-001/..."><img src="assets/img/loc.png" alt="Ícone de local">Av. Ana Costa, 323, Gonzaga, Santos, SP</a></li>
+          <li><a href="tel:+5513997329315"><img src="assets/img/telefone.png" alt="Ícone de telefone">(13) 99732-9315</a></li>
+          <li><a href="mailto:secretariasaojorge@outlook.com?subject=Contato%20pelo%20site&body=Olá,%20gostaria%20de%20mais%20informações."><img src="assets/img/email.png" alt="Ícone de e-mail">secretariasaojorge@outlook.com</a></li>
+        </ul>
+      </address>
+      <div>
+        <p>Feito por:</p>
+        <p>Gabriel da Cunha | Giulia de Moura | Kauê Santos | Yasmim de Castro | Yasmim Rodrigues</p>
+      </div>
+    </footer>
+    <script src="script/slider.js"></script>
+    <script src="script/hamburguerMenu.js"></script>
+  </body>
 </html>

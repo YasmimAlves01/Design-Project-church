@@ -1,3 +1,7 @@
+/* =========================================================
+   RESET / GLOBAL
+========================================================= */
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,18 +10,22 @@
 
 body {
   background-image: url(../img/fundo.jpg);
-  background-color: #FDF5EC;
+  background-color: #fdf5ec;
 }
 
-a
-{
+a {
   text-decoration: none;
 }
 
-#irtopo
-{
+/* BLOQUEAR ROLAGEM QUANDO MENU ABERTO */
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* Botão voltar ao topo */
+#irtopo {
   background-image: url(../img/topo.png);
-  background-color: #F4D860;
+  background-color: #f4d860;
   border-radius: 50px;
   width: 60px;
   height: 60px;
@@ -27,29 +35,35 @@ a
   z-index: 1;
 }
 
-/* header nav */
+/* =========================================================
+   HEADER / NAV
+========================================================= */
 
-header
-{
+header {
   background-color: #22202d30;
   border-radius: 0 0 50px 50px;
 }
 
-nav
-{
+header nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px 0 20px;
+  padding: 0 20px;
   max-width: 1900px;
-  min-width: auto;
   margin: 0 auto;
-  width: 100%;
 }
 
-nav ul
-{
+header nav img {
+  height: 118px;
+  transition: 0.5s;
+}
+
+header nav img:hover {
+  transform: scale(1.02);
+}
+
+header nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -58,51 +72,108 @@ nav ul
   gap: 100px;
 }
 
-nav ul li a
-{
+header nav ul li a {
   color: #000;
   font-size: 2rem;
 }
 
-nav h1 
-{
-  width: 116px;
-  height: 118px;
-  background-image: url('../img/logoIgreja.png');
-  background-size: 118px;
-  text-indent: -99999px;
-}
-
-nav h1:hover 
-{
-  transform: scale(1.02);
-  transition: transform 0.5s;
-}
-
-#barraPesquisa 
-{
+#barraPesquisa {
   width: 422px;
   height: 45px;
   background-color: #fff;
-  border: 1px solid #F4D860;
+  border: 1px solid #f4d860;
   border-radius: 20px;
   padding-left: 20px;
   font-size: 20px;
   color: #747474;
   font-family: Centaur;
+  transition: 0.5s;
 }
 
-#barraPesquisa:hover 
-{
+#barraPesquisa:hover {
   box-shadow: #f4d96036 0px 5px 8px;
-  transition: transform 0.5s;
 }
 
-/* =======================================*/
+/* =========================================================
+   MENU HAMBÚRGUER
+========================================================= */
 
-/* titulo */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
-section:first-of-type {
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background: #000;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* ANIMAÇÃO -> virar X */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* MENU MOBILE */
+@media (max-width: 1374px) {
+  nav ul {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    background: #ffffff;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 30px;
+    transform: translateX(100%);
+    transition: 0.3s ease;
+  }
+
+  nav ul.active {
+    transform: translateX(0);
+  }
+
+nav ul li a {
+  text-decoration: none;
+  text-underline-offset: 4px;  
+  transition: text-decoration-color 0.2s ease;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #f0DBB9;
+}
+
+  nav input {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* =========================================================
+   HERO / PRIMEIRA SECTION
+========================================================= */
+
+body > section:first-of-type {
   background: url("../img/headerBG.png") center/cover no-repeat;
   display: flex;
   justify-content: center;
@@ -112,7 +183,7 @@ section:first-of-type {
   height: 100vh;
 }
 
-section:first-of-type h1{
+section:first-of-type h1 {
   font-size: 5rem;
   font-weight: 400;
   margin-top: 10%;
@@ -123,22 +194,27 @@ section:first-of-type p {
   text-align: center;
 }
 
-/* =======================================*/
+/* =========================================================
+   TEXTOS GERAIS
+========================================================= */
 
 h1 {
   font-size: 100px;
   text-align: center;
-   /* font-family: "Baskerville Old Face"; Baixar a fonte depois*/
 }
 
 h2 {
-    text-align: center;
-    font-size: 128px;
-    /* font-family: "Baskerville Old Face"; */
+  text-align: center;
+  font-size: 128px;
 }
 
+/* =========================================================
+   FOOTER
+========================================================= */
+
+/* FOOTER */
 footer {
-  background-color: #5F0000;
+  background-color: #5f0000;
   background-image: url("../img/footerBG.png");
   background-position: right bottom;
   background-repeat: no-repeat;
@@ -146,8 +222,7 @@ footer {
   padding: 100px 40px;
 }
 
-footer a
-{
+footer a {
   color: #f5f5f5;
 }
 
@@ -155,32 +230,41 @@ footer address {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
-  width: 70%;
-
+  gap: 40px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 footer address img {
-  width: 400px;
-  margin-right: 20px;
+  width: 350px;
+  max-width: 70%;
 }
 
 footer address ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 footer address ul li {
   display: flex;
   align-items: center;
   font-size: 30px;
-  margin-bottom: 20px;
+}
+
+footer address ul li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap; /* impede quebra do email */
 }
 
 footer address ul li img {
-  width: 35px;
-  margin-right: 10px;
+  width: 30px;
+  height: 30px;
 }
 
 footer div {
@@ -188,4 +272,54 @@ footer div {
   color: #fff;
   font-size: 22px;
   margin-top: 70px;
+  line-height: 1.4;
+}
+
+
+/* 📱 RESPONSIVIDADE */
+@media (max-width: 900px) {
+
+  footer {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  footer address {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer address img {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  footer address ul li {
+    justify-content: center;
+    font-size: 22px;
+  }
+
+  footer address ul li a img {
+    width: 26px;
+    height: 26px;
+  }
+
+  footer div {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  footer address ul li {
+    font-size: 18px;
+  }
+
+  footer address ul li a img {
+    width: 22px;
+    height: 22px;
+  }
+
+  footer address img {
+    width: 250px;
+  }
 }
