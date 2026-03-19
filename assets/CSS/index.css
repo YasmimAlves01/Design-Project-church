@@ -192,14 +192,16 @@ section:nth-of-type(7) {
   justify-content: center;
   flex-direction: column;
   gap: 100px;
-  color: #fff;
 }
 
-section:nth-of-type(7) h1 {
+
+
+section:nth-of-type(7) h2 {
   text-align: center;
   font-weight: 400;
   font-size: 7rem;
   font-family: "Baskerville Old Face";
+  color: #ffffff;
 }
 
 section:nth-of-type(7) h2 {

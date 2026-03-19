@@ -98,7 +98,7 @@ header nav ul li a {
    MENU HAMBÚRGUER
 ========================================================= */
 
-.hamburger {
+.button-hambuguer {
   display: none;
   flex-direction: column;
   gap: 6px;
@@ -107,7 +107,7 @@ header nav ul li a {
   cursor: pointer;
 }
 
-.hamburger span {
+.button-hambuguer span {
   width: 30px;
   height: 3px;
   background: #000;
@@ -116,15 +116,15 @@ header nav ul li a {
 }
 
 /* ANIMAÇÃO -> virar X */
-.hamburger.active span:nth-child(1) {
+.button-hambuguer.active span:nth-child(1) {
   transform: translateY(9px) rotate(45deg);
 }
 
-.hamburger.active span:nth-child(2) {
+.button-hambuguer.active span:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger.active span:nth-child(3) {
+.button-hambuguer.active span:nth-child(3) {
   transform: translateY(-9px) rotate(-45deg);
 }
 
@@ -164,7 +164,7 @@ nav ul li a:hover {
     display: none;
   }
 
-  .hamburger {
+  .button-hambuguer {
     display: flex;
   }
 }
