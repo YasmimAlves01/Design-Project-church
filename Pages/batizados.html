@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Igreja Católica Apostólica Ortodoxa São Jorge</title>
-    <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="../assets/css/servicos.css">
+    <link rel="stylesheet" href="../assets/CSS/main.css">
+    <link rel="stylesheet" href="../assets/CSS/servicos.css">
   </head>
   <body>
     <header>
       <nav>
-        <a href="../home.html" id="logo"><img src="../assets/img/logoIgreja.png"></a>
-        <button class="hamburger" id="hamburgerBtn">
-        <span></span>
-        <span></span>
-        <span></span>
-        </button>
+        <img src="../assets/img/logoIgreja.png" alt="Logo da Igreja">
+          <span class="hamburger" id="hamburgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
         <ul>
+          <li><a href="../home.html">Home</a></li>
           <li><a href="../home.html#arquidocese">Arquidocese</a></li>
           <li><a href="../home.html#servicos">Serviços</a></li>
           <li><a href="../home.html#galeria">Galeria</a></li>
@@ -30,9 +31,8 @@
     <!-- "header" titulo subtitulo e versiculo -->
     <section>
       <h1>Igreja Católica Apostólica<br> Ortodoxa São Jorge</h1>
-      <p>"Em Antioquia, pela primeira vez,<br> foram os discípulos chamados cristãos"
-      <p>
-      <p>Atos dos Apóstolos 11:26</p>
+      <h2>"Em Antioquia, pela primeira vez,<br> foram os discípulos chamados cristãos"</h2>
+      <h2>Atos dos Apóstolos 11:26</h2>
     </section>
     <main>
       <h2>Serviços</h2>
@@ -42,12 +42,16 @@
       </section>
       <section>
         <article>
-          <h4>Segunda a Sexta:</h4>
-          <p>10:30 – 13:00 | 15:30 – 18:00</p>
-          <h4>Sábados:</h4>
-          <p>10:30 – 13:00</p>
-          <h4>Domingos e feriados:</h4>
-          <p>Sem atendimento</p>
+        <dl>
+          <dt>Segunda a Sexta:</dt>
+          <dd>10:30 – 13:00 | 15:30 – 18:00</dd>
+
+          <dt>Sábados:</dt>
+          <dd>10:30 – 13:00</dd>
+
+          <dt>Domingos e feriados:</dt>
+          <dd>Sem atendimento</dd>
+        </dl>
           <p>Obs: Havendo missas aos sábados, o atendimento pode ser reduzido sem aviso prévio.</p>
           <h4>Condições e documentação para a realização do Batismo</h4>
           <p>Os pais (ambos) devem, obrigatoriamente, haverem sido batizados (Igreja Ortodoxa canônica ou Igreja Católica Romana) para poderem batizar o seu filho em nossa Igreja, e, não sendo casados na Igreja, devem apresentar a Certidão de Batismo (Encíclica Arquiepiscopal – Guia do Clero IV, 43).</p>
@@ -62,21 +66,50 @@
               Documentos obrigatórios para o agendamento do Batismo
               <ol>
                 <li>Cópia da Certidão de Nascimento da criança.</li>
-                <li>Cópia da Certidão de Casamento civil e religioso dos pais.</li>
-                <p>A Certidão de Casamento Religioso com Efeito Civil não substitui a certidão expedida pela Igreja, que deve ser apresentada.</p>
+
+                <li>
+                  Cópia da Certidão de Casamento civil e religioso dos pais.
+                  <span class="obs">
+                    A Certidão de Casamento Religioso com Efeito Civil não substitui a certidão expedida pela Igreja, que deve ser apresentada.
+                  </span>
+                </li>
+
                 <li>Cópia do RG dos pais e dos padrinhos.</li>
-                <li>Caso os padrinhos sejam solteiros, apresentar cópia da Certidão de Batismo.</li>
-                <p>(Não será aceita "lembrança de batismo".)</p>
-                <li>Para padrinhos casados, apresentar cópia da Certidão de Casamento civil e religioso.</li>
-                <p>A Certidão de Casamento Religioso com Efeito Civil não substitui a certidão expedida pela Igreja.</p>
-                <li>Caso os pais não sejam casados na Igreja, apresentar cópia da Certidão de Batismo.</li>
-                <p>(Não será aceita "lembrança de batismo".)</p>
-                <li>Caso os pais não sejam casados (nem no civil nem no religioso), apresentar cópia da Certidão de Batismo e formulário próprio preenchido (disponível na Secretaria da Catedral).</li>
-                <li>Pais e padrinhos devem observar rigorosamente o horário para que a celebração do batismo ocorra com pontualidade.</li>
-                <li>Na Igreja Ortodoxa, o Batismo, a Crisma e a Eucaristia são ministrados na mesma cerimônia.</li>
-                <p>Não há, portanto, padrinhos de Crisma e/ou Comunhão. (Favor não insistir.)</p>
+
+                <li>
+                  Caso os padrinhos sejam solteiros, apresentar cópia da Certidão de Batismo.
+                  <span class="obs">(Não será aceita "lembrança de batismo".)</span>
+                </li>
+
+                <li>
+                  Para padrinhos casados, apresentar cópia da Certidão de Casamento civil e religioso.
+                  <span class="obs">
+                    A Certidão de Casamento Religioso com Efeito Civil não substitui a certidão expedida pela Igreja.
+                  </span>
+                </li>
+
+                <li>
+                  Caso os pais não sejam casados na Igreja, apresentar cópia da Certidão de Batismo.
+                  <span class="obs">(Não será aceita "lembrança de batismo".)</span>
+                </li>
+
+                <li>
+                  Caso os pais não sejam casados (nem no civil nem no religioso), apresentar cópia da Certidão de Batismo e formulário próprio preenchido (disponível na Secretaria da Catedral).
+                </li>
+
+                <li>
+                  Pais e padrinhos devem observar rigorosamente o horário para que a celebração do batismo ocorra com pontualidade.
+                </li>
+
+                <li>
+                  Na Igreja Ortodoxa, o Batismo, a Crisma e a Eucaristia são ministrados na mesma cerimônia.
+                  <span class="obs">
+                    Não há, portanto, padrinhos de Crisma e/ou Comunhão. (Favor não insistir.)
+                  </span>
+                </li>
               </ol>
             </li>
+
             <li>
               Informações importantes
               <ol>
@@ -99,7 +132,7 @@
         <figure>
           <img src="../assets/img/servicos/batizado.png" alt="Foto de um bebe sendo batizado">
         </figure>
-        <a href="#logo"><img src="../assets/img/topo.png" alt="icone de topo" id="irtopo"></a>
+        <a href="#"><img src="../assets/img/topo.png" alt="icone de topo" id="irtopo"></a>
       </section>
     </main>
     <footer>
@@ -113,8 +146,8 @@
         </ul>
       </address>
       <div>
-        <p>Feito por:</p>
-        <p>Gabriel da Cunha | Giulia de Moura | Kauê Santos | Yasmim de Castro | Yasmim Rodrigues</p>
+        <p>Feito por: <br>
+        Gabriel da Cunha | Giulia de Moura | Kauê Santos | Yasmim de Castro | Yasmim Rodrigues</p>
       </div>
     </footer>
     <script src="../script/hamburguerMenu.js"></script>
