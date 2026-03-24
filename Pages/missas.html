@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Igreja Católica Apostólica Ortodoxa São Jorge</title>
-    <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="../assets/css/servicos.css">
+    <link rel="stylesheet" href="../assets/CSS/main.css">
+    <link rel="stylesheet" href="../assets/CSS/servicos.css">
   </head>
   <body>
     <header>
       <nav>
-        <a href="../home.html" id="logo"><img src="../assets/img/logoIgreja.png"></a>
-        <button class="hamburger" id="hamburgerBtn">
-        <span></span>
-        <span></span>
-        <span></span>
-        </button>
+        <img src="../assets/img/logoIgreja.png" alt="Logo da Igreja">
+        <span class="hamburger" id="hamburgerBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
         <ul>
+          <li><a href="../home.html">Home</a></li>
           <li><a href="../home.html#arquidocese">Arquidocese</a></li>
           <li><a href="../home.html#servicos">Serviços</a></li>
           <li><a href="../home.html#galeria">Galeria</a></li>
@@ -42,12 +43,14 @@
       </section>
       <section>
         <article>
-          <h4>Segunda a Sexta:</h4>
-          <p>10:30 – 13:00 | 15:30 – 18:00</p>
-          <h4>Sábados:</h4>
-          <p>10:30 – 13:00</p>
-          <h4>Domingos e feriados:</h4>
-          <p>Sem atendimento</p>
+        <dl>
+          <dt>Segunda a Sexta:</dt>
+          <dd>10:30 – 13:00 | 15:30 – 18:00</dd>
+          <dt>Sábados:</dt>
+          <dd>10:30 – 13:00</dd>
+          <dt>Domingos e feriados:</dt>
+          <dd>Sem atendimento</dd>
+        </dl>
           <p>Obs: Havendo missas aos sábados, o atendimento pode ser reduzido sem aviso prévio.</p>
           <p>
             <strong>Atenção:</strong> 
@@ -63,10 +66,15 @@
           </ul>
           <p>Se a família marcar uma Missa Solene, é necessário a contratação de um  coral. Para tal a família deve entrar em contato com um desses corais:</p>
           <ul>
-            <li>Coral e Orquestra Magnificat: (11)94333-1186 <br><a href="https://magnificatproducoes.com.br/">magnificatproducoes.com.br/</a></li>
-            <br>
-            <li>Coral Baccarelli: (11)98962-1388 <br><a href="https://www.baccarellielizetecosta.com.br/">www.baccarellielizetecosta.com.br/</a></li>
-            <br>
+            <li>
+              Coral e Orquestra Magnificat: (11) 94333-1186 <br>
+              <a href="https://magnificatproducoes.com.br/">magnificatproducoes.com.br/</a>
+            </li>
+
+            <li>
+              Coral Baccarelli: (11) 98962-1388 <br>
+              <a href="https://www.baccarellielizetecosta.com.br/">www.baccarellielizetecosta.com.br/</a>
+            </li>
           </ul>
           <h4>Observações:</h4>
           <p>Outros nomes de falecidos da família poderão ser acrescentados e  lembrados no dia. Para tanto os mesmos devem ser apresentados na  secretaria ou na sacristia com antecedência.O pagamento da contribuição para a Igreja deve ser feito em dinheiro ou cheque apenas.</p>
@@ -79,7 +87,7 @@
         <figure>
           <img src="../assets/img/servicos/missa.png" alt="Foto de uma vela acesa">
         </figure>
-        <a href="#logo"><img src="../assets/img/topo.png" alt="icone de topo" id="irtopo"></a>
+        <a href="#"><img src="../assets/img/topo.png" alt="icone de topo" id="irtopo"></a>
       </section>
     </main>
     <footer>
@@ -93,8 +101,8 @@
         </ul>
       </address>
       <div>
-        <p>Feito por:</p>
-        <p>Gabriel da Cunha | Giulia de Moura | Kauê Santos | Yasmim de Castro | Yasmim Rodrigues</p>
+        <p>Feito por: <br>
+        Gabriel da Cunha | Giulia de Moura | Kauê Santos | Yasmim de Castro | Yasmim Rodrigues</p>
       </div>
     </footer>
     <script src="../script/hamburguerMenu.js"></script>
