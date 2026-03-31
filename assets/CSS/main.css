@@ -128,7 +128,7 @@ header nav ul li a {
 }
 
 /* MENU MOBILE */
-@media (max-width: 1374px) {
+@media (max-width: 1919px) {
   nav ul {
     position: absolute;
     top: 120px;
@@ -179,7 +179,7 @@ body > section:first-of-type {
   align-items: center;
   flex-direction: column;
   gap: 30px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 section:first-of-type h1 {
