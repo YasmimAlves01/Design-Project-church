@@ -1,0 +1,13 @@
+body{
+    background-image: url(../img/fundoOracao.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+header{
+   box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+}
+
+header nav ul li a {
+    color: #fff;
+}
