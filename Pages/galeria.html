@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Igreja Católica Apostólica Ortodoxa São Jorge</title>
-    <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="../assets/css/servicos.css">
+    <link rel="stylesheet" href="../assets/CSS/main.css">
+    <link rel="stylesheet" href="../assets/CSS/servicos.css">
   </head>
   <body>
     <header>
       <nav>
-        <a href="../home.html" id="logo"><img src="../assets/img/logoIgreja.png"></a>
-        <button class="hamburger" id="hamburgerBtn">
-        <span></span>
-        <span></span>
-        <span></span>
-        </button>
+        <img src="../assets/img/logoIgreja.png" alt="Logo da Igreja, uma igreja branca de telhado vermelho, paredes brancas e contorno dourado">
+        <span class="button-hambuguer" id="hamburgerBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
         <ul>
+          <li><a href="../home.html">Home</a></li>
           <li><a href="../home.html#arquidocese">Arquidocese</a></li>
           <li><a href="../home.html#servicos">Serviços</a></li>
           <li><a href="../home.html#galeria">Galeria</a></li>
@@ -30,9 +31,8 @@
     <!-- "header" titulo subtitulo e versiculo -->
     <section>
       <h1>Igreja Católica Apostólica<br> Ortodoxa São Jorge</h1>
-      <p>"Em Antioquia, pela primeira vez,<br> foram os discípulos chamados cristãos"
-      <p>
-      <p>Atos dos Apóstolos 11:26</p>
+      <h2>"Em Antioquia, pela primeira vez,<br> foram os discípulos chamados cristãos"<h2>
+      <h2>Atos dos Apóstolos 11:26</h2>
     </section>
     <main>
       <h2>Serviços</h2>
@@ -42,12 +42,14 @@
       </section>
       <section>
         <article>
-          <h4>Segunda a Sexta:</h4>
-          <p>10:30 – 13:00 | 15:30 – 18:00</p>
-          <h4>Sábados:</h4>
-          <p>10:30 – 13:00</p>
-          <h4>Domingos e feriados:</h4>
-          <p>Sem atendimento</p>
+          <dl>
+            <dt>Segunda a Sexta:</dt>
+            <dd>10:30 – 13:00 | 15:30 – 18:00</dd>
+            <dt>Sábados:</dt>
+            <dd>10:30 – 13:00</dd>
+            <dt>Domingos e feriados:</dt>
+            <dd>Sem atendimento</dd>
+          </dl>
           <p>Obs: Havendo missas aos sábados, o atendimento pode ser reduzido sem aviso prévio.</p>
           <p>
             <strong>Atenção:</strong> 
@@ -93,8 +95,8 @@
         </ul>
       </address>
       <div>
-        <p>Feito por:</p>
-        <p>Gabriel da Cunha | Giulia de Moura | Kauê Santos | Yasmim de Castro | Yasmim Rodrigues</p>
+        <p>Feito por: <br>
+        Gabriel da Cunha | Giulia de Moura | Kauê Santos | Yasmim de Castro | Yasmim Rodrigues</p>
       </div>
     </footer>
     <script src="../script/hamburguerMenu.js"></script>

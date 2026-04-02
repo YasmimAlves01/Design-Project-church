@@ -15,12 +15,12 @@ main section h3
   font-size: 90px;
 }
 
-main section h4
+main section dt, main section h4
 {
   font-size: 40px;
 }
 
-main p {
+main p, main section dd{
   font-family: "Centaur";
   font-size: 27px;
 }
@@ -56,7 +56,8 @@ main li {
   font-weight: bold;
 }
 
-main ol > li p {
+main .obs {
+  display: block;
   font-weight: normal;
 }
 

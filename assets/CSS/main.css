@@ -50,7 +50,6 @@ header nav {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  max-width: 1900px;
   margin: 0 auto;
 }
 
@@ -129,7 +128,7 @@ header nav ul li a {
 }
 
 /* MENU MOBILE */
-@media (max-width: 1374px) {
+@media (max-width: 1919px) {
   nav ul {
     position: absolute;
     top: 120px;
@@ -180,7 +179,7 @@ body > section:first-of-type {
   align-items: center;
   flex-direction: column;
   gap: 30px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 section:first-of-type h1 {
@@ -189,9 +188,10 @@ section:first-of-type h1 {
   margin-top: 10%;
 }
 
-section:first-of-type p {
+section:first-of-type h2 {
   font-size: 40px;
   text-align: center;
+  font-weight: normal;
 }
 
 /* =========================================================
