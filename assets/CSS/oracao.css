@@ -1,3 +1,167 @@
+/* Header inicial */
+/* =========================================================
+   RESET / GLOBAL
+========================================================= */
+
+
+a {
+  text-decoration: none;
+}
+
+/* BLOQUEAR ROLAGEM QUANDO MENU ABERTO */
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* Botão voltar ao topo */
+#irtopo {
+  background-image: url(../img/topo.png);
+  background-color: #f4d860;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  position: sticky;
+  top: 90%;
+  left: 95%;
+  z-index: 1;
+}
+
+/* =========================================================
+   HEADER / NAV
+========================================================= */
+
+header {
+  background-color: #22202d30;
+  border-radius: 0 0 50px 50px;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+header nav img {
+  height: 118px;
+  transition: 0.5s;
+}
+
+header nav img:hover {
+  transform: scale(1.02);
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+header nav ul li a {
+  color: #000;
+  font-size: 2rem;
+}
+
+#barraPesquisa {
+  width: 422px;
+  height: 45px;
+  background-color: #fff;
+  border: 1px solid #f4d860;
+  border-radius: 20px;
+  padding-left: 20px;
+  font-size: 20px;
+  color: #747474;
+  font-family: Centaur;
+  transition: 0.5s;
+}
+
+#barraPesquisa:hover {
+  box-shadow: #f4d96036 0px 5px 8px;
+}
+
+/* =========================================================
+   MENU HAMBÚRGUER
+========================================================= */
+
+.button-hambuguer {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button-hambuguer span {
+  width: 30px;
+  height: 3px;
+  background: #000;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* ANIMAÇÃO -> virar X */
+.button-hambuguer.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.button-hambuguer.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.button-hambuguer.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* MENU MOBILE */
+@media (max-width: 1919px) {
+  nav ul {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    background: #ffffff;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 30px;
+    transform: translateX(100%);
+    transition: 0.3s ease;
+  }
+
+  nav ul.active {
+    transform: translateX(0);
+  }
+
+nav ul li a {
+  text-decoration: none;
+  text-underline-offset: 4px;  
+  transition: text-decoration-color 0.2s ease;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #f0DBB9;
+}
+
+  nav input {
+    display: none;
+  }
+
+  .button-hambuguer {
+    display: flex;
+  }
+}
+
+
+/* mexendo no forms */
+
 body{
     background-image: url(../img/fundoOracao.svg);
     background-repeat: no-repeat;
@@ -10,4 +174,73 @@ header{
 
 header nav ul li a {
     color: #fff;
+}
+
+.Envio{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Envio label{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.forms{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.forms h1{
+  font-size: 130px;
+  color: #fff;
+  font-weight: 300;
+  font-family: "Baskerville Old Face";
+}
+
+.forms h3{
+  font-size: 35px;
+  color: #fff;
+  font-weight: 200;
+  width: 30%;
+  text-align: center;
+}
+
+.preencher{
+  font-size: 60px;
+  color: #fff;
+  font-weight: 200;
+}
+
+input{
+  width: 40%;
+  height: 60px;
+  border-radius: 0.5vw;
+  border: #f4d860 1px solid;
+  color: #747474;
+}
+
+label{
+  font-size: 30px;
+  font-weight: 200;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #fff;
+
+}
+
+button{
+  width: 300px;
+  height: 50px;
+  border-radius: 30vw;
+  background-color: #caa501;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Baskerville Old Face";
+  color: #fff;
 }
