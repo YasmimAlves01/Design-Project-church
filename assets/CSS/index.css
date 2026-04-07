@@ -2,6 +2,11 @@ a {
   text-decoration: none;
 }
 
+body > section:first-of-type 
+{
+  background: url("../img/headerBG.png") center/cover no-repeat;
+}
+
 /* ===========================
    Card Santo do Dia
 =========================== */
@@ -196,8 +201,6 @@ section:nth-of-type(7) {
   gap: 100px;
 }
 
-
-
 section:nth-of-type(7) h2 {
   text-align: center;
   font-weight: 400;
@@ -224,6 +227,7 @@ section:nth-of-type(7) a {
   border-radius: 100px;
   text-align: center;
   font-family: "Baskerville Old Face";
+  margin-bottom: 90px;
 }
 
 section:nth-of-type(7) a:hover {

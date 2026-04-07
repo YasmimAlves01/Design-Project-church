@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Igreja Católica Apostólica Ortodoxa São Jorge</title>
+    <link rel="stylesheet" href="../assets/CSS/main.css">
     <link rel="stylesheet" href="../assets/css/oracao.css">
   </head>
   <body>
     <header>
       <nav>
-        <img src="../assets/img/logoIgreja.png" alt="Logo da Igreja, uma igreja branca de telhado vermelho, paredes brancas e contorno dourado">
+        <img src="../assets/img/logoIgreja.png" alt="Logo da Igreja, uma igreja branca de telhado vermelho, paredes brancas e contorno dourado" id="logo">
+        <!-- Botão do menu hambúrguer -->
         <span class="button-hambuguer" id="hamburgerBtn">
           <span></span>
           <span></span>
           <span></span>
         </span>
-        <ul>
+        <!-- Menu principal de navegação -->
+        <ul id="linksBrancos">
           <li><a href="../home.html">Home</a></li>
-          <li><a href="../home.html#arquidocese">Arquidocese</a></li>
+          <li><a href="../home.html#arquidiocese">Arquidocese</a></li>
           <li><a href="../home.html#servicos">Serviços</a></li>
           <li><a href="../home.html#galeria">Galeria</a></li>
           <li><a href="../home.html#catedral">Catedral</a></li>
@@ -28,53 +31,37 @@
       </nav>
     </header>
 
-    <section class="forms">
-    <!-- Cabeçalho inicial -->
-     <h1>Peça uma oração</h1>
-
-    <h3>Entre em contato, conte sua aflição e receba uma palavra ou oração do Padre Dimitrios Attarian</h3>     
-
-    <h2 class="preencher">Preencha as Informações</h2>
-
-
-    <section class="Envio">
-    <label for="">Nome</label>
-    <input type="text" placeholder="Digite seu Nome">
-
-    <label for="">Sobrenome</label>
-    <input type="text" placeholder="Digite seu Sobrenome">
-
-    <label for="">E-mail</label>
-    <input type="text" placeholder="Digite seu E-mail">
-
-    <label for="">Sua dor</label>
-    <textarea name="" id="" placeholder="Escreva sobre a sua dor ou seu pedido" rows="4" cols="50"></textarea>
-
-    <button type="submit">Enviar</button>
-
-    </section>
-
-    <h2 class="preencher">Confira a mensagem que você recebeu</h2>
-
-    <label for="">Nome</label>
-    <input type="text" placeholder="Digite seu Nome">
-
-    <label for="">E-mail</label>
-    <input type="text" placeholder="Digite seu E-mail">
-
-    <button type="submit">Procurar</button>
-
-</section>
-<!-- Voltar para o topo -->
     <main>
+      <h1>Peça uma oração</h1>
+
+      <form action="" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" tabindex="1" placeholder="Digite seu Nome" required>
+
+        <label for="email">E-mail</label>
+        <input type="text" id="email" tabindex="2" placeholder="Digite seu E-mail" required>
+
+        <label for="mensagem">Sua dor</label>
+        <textarea name="mensagem" id="mensagem" tabindex="3" placeholder="Escreva sobre a sua dor ou seu pedido" rows="4" cols="50" required></textarea>
+
+        <button type="submit" tabindex="4">Enviar</button>
+      </form>
+
+      <h2>Confira sua mensagem</h2>
+
+      <form action="" method="post">
+        <label for="nomeConferir">Nome</label>
+        <input type="text" id="nomeConferir" tabindex="5" placeholder="Digite seu Nome" required>
+
+        <label for="emailConferir">E-mail</label>
+        <input type="text" id="emailConferir" tabindex="6" placeholder="Digite seu E-mail" required>
+
+        <button type="submit" tabindex="7 ">Procurar</button>
+      </form>
+
       <a href="#logo"><img src="../assets/img/topo.png" alt="icone de topo" id="irtopo"></a>
     </main>
-
-
-
-
-    <!-- Footer -->
-    <!-- <footer>
+   <footer>
       <address>
         <img src="../assets/img/logoIgreja.png" alt="Logo Igreja São Jorge">
         <ul>
@@ -88,7 +75,7 @@
         <p>Feito por: <br>
         Gabriel da Cunha | Giulia de Moura | Kauê Santos | Yasmim de Castro | Yasmim Rodrigues</p>
       </div>
-    </footer> -->
+    </footer>
     <script src="../script/hamburguerMenu.js"></script>
   </body>
 </html>

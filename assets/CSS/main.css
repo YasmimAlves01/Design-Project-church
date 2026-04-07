@@ -11,6 +11,7 @@
 body {
   background-image: url(../img/fundo.jpg);
   background-color: #fdf5ec;
+  overflow-x: hidden;
 }
 
 a {
@@ -46,9 +47,10 @@ header {
 
 header nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -65,10 +67,10 @@ header nav img:hover {
 header nav ul {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  gap: 100px;
+  gap: 60px;
 }
 
 header nav ul li a {
@@ -128,7 +130,7 @@ header nav ul li a {
 }
 
 /* MENU MOBILE */
-@media (max-width: 1919px) {
+@media (max-width: 1700px) {
   nav ul {
     position: absolute;
     top: 120px;
@@ -148,16 +150,16 @@ header nav ul li a {
     transform: translateX(0);
   }
 
-nav ul li a {
-  text-decoration: none;
-  text-underline-offset: 4px;  
-  transition: text-decoration-color 0.2s ease;
-}
+  nav ul li a {
+    text-decoration: none;
+    text-underline-offset: 4px;  
+    transition: text-decoration-color 0.2s ease;
+  }
 
-nav ul li a:hover {
-  text-decoration: underline;
-  text-decoration-color: #f0DBB9;
-}
+  nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #f0DBB9;
+  }
 
   nav input {
     display: none;
@@ -173,7 +175,6 @@ nav ul li a:hover {
 ========================================================= */
 
 body > section:first-of-type {
-  background: url("../img/headerBG.png") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
