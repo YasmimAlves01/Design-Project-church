@@ -26,6 +26,14 @@ main
   color: #fff;
 }
 
+@media (max-width: 1700px) 
+{
+  #linksBrancos a
+  {
+    color: #000000;
+  }
+}
+
 form
 {
   display: flex;
