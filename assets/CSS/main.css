@@ -12,6 +12,11 @@ body {
   background-image: url(../img/fundo.jpg);
   background-color: #fdf5ec;
   overflow-x: hidden;
+  line-height: 1.5;
+}
+
+p, h1, h2, h3, li {
+  line-height: 1.5;
 }
 
 a {

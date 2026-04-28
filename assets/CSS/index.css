@@ -7,6 +7,10 @@ body > section:first-of-type
   background: url("../img/headerBG.png") center/cover no-repeat;
 }
 
+p, h1, h2, h3, li {
+  line-height: 1.5;
+}
+
 /* ===========================
    Card Santo do Dia
 =========================== */

@@ -5,6 +5,10 @@ main {
   padding: 70px;
 }
 
+p, h1, h2, h3, li {
+  line-height: 1.5;
+}
+
 main h2
 {
   font-size: 130px;

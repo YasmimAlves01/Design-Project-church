@@ -2,6 +2,11 @@ body{
   background-image: url(../img/fundoOracao.svg);
   background-repeat: no-repeat;
   background-size: 100%;
+  line-height: 1.5;
+}
+
+p, h1, h2, h3, li {
+  line-height: 1.5;
 }
 
 header{
