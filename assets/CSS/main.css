@@ -287,11 +287,7 @@ footer address ul li a {
   display: flex;
   align-items: center;
   gap: 12px;
-<<<<<<< HEAD
   white-space: nowrap; 
-=======
-  white-space: normal;
->>>>>>> acecec0ad4796de12640720ef746b89415ddcd71
 }
 
 footer address ul li img {
