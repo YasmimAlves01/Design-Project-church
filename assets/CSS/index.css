@@ -34,8 +34,8 @@ section:nth-of-type(2) figure {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 100px;
-  padding: 50px;
+  gap: clamp(30px, 6vw, 100px);
+  padding: clamp(24px, 4vw, 50px);
   border-radius: 50px;
   background-image: url(../img/image\ 3.png);
   background-repeat: no-repeat;
@@ -44,8 +44,8 @@ section:nth-of-type(2) figure {
 }
 
 section:nth-of-type(2) figure img {
-  width: 380px;
-  height: 490px;
+  width: min(380px, 100%);
+  height: auto;
   margin-top: 50px;
 }
 
@@ -58,13 +58,13 @@ section:nth-of-type(2) figcaption {
 }
 
 section:nth-of-type(2) figcaption h1 {
-  font-size: 5rem;
+  font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 200;
   font-family: "Baskerville Old Face";
 }
 
 section:nth-of-type(2) figcaption p {
-  font-size: 2rem;
+  font-size: clamp(1.25rem, 2vw, 2rem);
   font-weight: 300;
   font-family: "Centaur";
 }
@@ -79,7 +79,7 @@ section:nth-of-type(2) figcaption p {
    Arquidocese
 =========================== */
 section h2 {
-  font-size: 7.5rem;
+  font-size: clamp(2.25rem, 7vw, 7.5rem);
   font-weight: 300;
   margin-top: 8%;
   margin-bottom: 5%;
@@ -107,8 +107,9 @@ figure {
 }
 
 section:nth-of-type(3) article a figure {
-  width: 414px;
-  height: 573px;
+  width: min(414px, calc(100vw - 40px));
+  min-height: 573px;
+  height: auto;
   border: 3px solid #5f0000;
 }
 
@@ -120,14 +121,15 @@ section:nth-of-type(3) article figure figcaption {
 }
 
 section:nth-of-type(3) article figure img {
-  width: 366px;
-  height: 363px;
+  width: min(366px, 100%);
+  height: auto;
 }
 
 section:nth-of-type(3) article figure,
 section:nth-of-type(4) article figure {
-  width: 358px;
-  height: 424px;
+  width: min(358px, calc(100vw - 40px));
+  min-height: 424px;
+  height: auto;
   border: 4px solid #5f0000;
 }
 
@@ -180,14 +182,15 @@ section:nth-of-type(4) article figure a:hover {
 =========================== */
 section:nth-of-type(6) article figure {
   display: flex;
-  width: 386px;
-  height: 534px;
+  width: min(386px, calc(100vw - 40px));
+  min-height: 534px;
+  height: auto;
   border: 4px solid #5f0000;
 }
 
 section:nth-of-type(6) article figure img {
-  width: 309px;
-  height: 312px;
+  width: min(309px, 100%);
+  height: auto;
 }
 
 section:nth-of-type(6) article figcaption {
@@ -201,7 +204,8 @@ section:nth-of-type(6) article figcaption {
    Oração
 =========================== */
 section:nth-of-type(7) {
-  height: 1002px;
+  min-height: 1002px;
+  height: auto;
   background: url("../img/fundopediroracao.png") center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -213,14 +217,14 @@ section:nth-of-type(7) {
 section:nth-of-type(7) h2 {
   text-align: center;
   font-weight: 400;
-  font-size: 7rem;
+  font-size: clamp(2.5rem, 6vw, 7rem);
   font-family: "Baskerville Old Face";
   color: #ffffff;
 }
 
 section:nth-of-type(7) p {
   text-align: center;
-  font-size: 4rem;
+  font-size: clamp(1.5rem, 4vw, 4rem);
   font-weight: 400;
   width: 70%;
   font-family: "Centaur";
@@ -231,8 +235,8 @@ section:nth-of-type(7) a {
   border: 1px solid #f7f7f724;
   background: #6464665b;
   backdrop-filter: blur(2px);
-  font-size: 50px;
-  padding: 25px 110px;
+  font-size: clamp(1.5rem, 3vw, 50px);
+  padding: 25px clamp(35px, 7vw, 110px);
   color: #fff;
   border-radius: 100px;
   text-align: center;
@@ -269,7 +273,7 @@ section:nth-of-type(7) a:hover {
   }
 
   section:nth-of-type(7) h1 {
-    font-size: 100px;
+    font-size: clamp(2.5rem, 7vw, 100px);
   }
 
   section:nth-of-type(7) h2 {
