@@ -214,9 +214,7 @@ h2 {
   font-size: 128px;
 }
 
-/* =========================================================
-   FOOTER
-========================================================= */
+
 
 /* FOOTER */
 footer {
@@ -265,7 +263,7 @@ footer address ul li a {
   display: flex;
   align-items: center;
   gap: 12px;
-  white-space: nowrap; /* impede quebra do email */
+  white-space: nowrap; 
 }
 
 footer address ul li img {
@@ -282,7 +280,7 @@ footer div {
 }
 
 
-/* 📱 RESPONSIVIDADE */
+/* RESPONSIVIDADE */
 @media (max-width: 900px) {
 
   footer {

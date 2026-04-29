@@ -7,6 +7,11 @@ body > section:first-of-type
   background: url("../img/headerBG.png") center/cover no-repeat;
 }
 
+body > section:first-of-type > p
+{
+  font-size: 35px;
+}
+
 p, h1, h2, h3, li {
   line-height: 1.5;
 }
@@ -213,12 +218,13 @@ section:nth-of-type(7) h2 {
   color: #ffffff;
 }
 
-section:nth-of-type(7) h2 {
+section:nth-of-type(7) p {
   text-align: center;
   font-size: 4rem;
   font-weight: 400;
   width: 70%;
   font-family: "Centaur";
+  color: #ffffff;
 }
 
 section:nth-of-type(7) a {
