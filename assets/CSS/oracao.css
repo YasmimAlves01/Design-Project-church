@@ -50,20 +50,21 @@ form
 
 h1
 {
-  font-size: 130px;
+  font-size: clamp(2.5rem, 8vw, 130px);
   font-weight: 300;
   font-family: "Baskerville Old Face";
 }
 
 h2
 {
- font-size: 75px;
+ font-size: clamp(2rem, 6vw, 75px);
   font-weight: 300;
   font-family: "Baskerville Old Face"; 
 }
 
 input{
-  width: 40%;
+  width: min(40%, 80ch);
+  min-width: min(100%, 320px);
   height: 60px;
   border-radius: 0.5vw;
   border: #f4d860 1px solid;
@@ -72,7 +73,8 @@ input{
 }
 
 label{
-  width: 40%;
+  width: min(40%, 80ch);
+  min-width: min(100%, 320px);
   font-size: 30px;
   font-weight: 200;
   text-align: left;
@@ -80,7 +82,8 @@ label{
 
 textarea
 {
-  width: 40%;
+  width: min(40%, 80ch);
+  min-width: min(100%, 320px);
   border-radius: 10px;
 }
 
@@ -92,8 +95,9 @@ textarea:hover, input:hover
 }
 
 button{
-  width: 300px;
-  height: 50px;
+  width: min(300px, 100%);
+  min-height: 50px;
+  height: auto;
   border-radius: 30vw;
   background-color: #caa501;
   font-size: 30px;
@@ -110,4 +114,16 @@ button:hover
   background-color: #fff;
   transform: scale(1.02);
   transition: transform 1s;
+}
+
+@media (max-width: 900px) {
+  form {
+    margin: 40px 20px;
+  }
+
+  input,
+  label,
+  textarea {
+    width: 100%;
+  }
 }

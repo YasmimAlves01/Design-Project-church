@@ -8,7 +8,7 @@ p, h1, h2, h3, li {
 
 /* Slideshow container */
 .slide-container {
-  max-width: 1000px;
+  max-width: min(1000px, 100%);
   position: relative;
   margin: auto;
 }
@@ -42,6 +42,9 @@ p, h1, h2, h3, li {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  line-height: 1.5;
+  letter-spacing: 0.12em;
+  word-spacing: 0.16em;
 }
 
 /* Position the "next button" to the right */
