@@ -195,7 +195,7 @@ section:first-of-type h1 {
   margin-top: 10%;
 }
 
-section:first-of-type h2 {
+section:first-of-type p {
   font-size: clamp(1.5rem, 3vw, 40px);
   text-align: center;
   font-weight: normal;
