@@ -276,6 +276,47 @@ footer div {
   line-height: 1.4;
 }
 
+/* =====================================================
+   SC 2.4.7 – Foco Visível
+===================================================== */
+
+:focus-visible {
+  outline: 3px solid #005FCC;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+nav a:focus-visible {
+  outline: 3px solid #005FCC;
+  outline-offset: 4px;
+  border-radius: 4px;
+  background-color: rgba(0, 95, 204, 0.08);
+}
+
+#barraPesquisa:focus-visible {
+  outline: 3px solid #005FCC;
+  outline-offset: 0px;
+  border-radius: 4px;
+  box-shadow: 0 0 0 4px rgba(0, 95, 204, 0.2);
+}
+
+#hamburgerBtn:focus-visible {
+  outline: 3px solid #005FCC;
+  outline-offset: 5px;
+  border-radius: 4px;
+}
+
+#irtopo:focus-visible {
+  outline: 3px solid #005FCC;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+footer a:focus-visible {
+  outline: 3px solid #005FCC;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
 
 /* 📱 RESPONSIVIDADE */
 @media (max-width: 900px) {
