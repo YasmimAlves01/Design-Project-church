@@ -10,10 +10,19 @@
     <header>
       <nav>
         <img src="../assets/img/logoIgreja.png" alt="" id="logo">
-        <span class="button-hambuguer" id="hamburgerBtn" aria-label="Menu hamburguer">
-          <span></span>
-          <span></span>
-          <span></span>
+        <span
+          class="button-hambuguer"
+          id="hamburgerBtn"
+          tabindex="0"
+          role="button"
+          aria-label="Menu hamburguer"
+          aria-expanded="false"
+          title="Pressione Enter ou Espaço para abrir o menu"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span class="sr-only">Pressione Enter ou Espaço para abrir o menu</span>
         </span>
         <ul>
           <li><a href="../index.html">Home</a></li>

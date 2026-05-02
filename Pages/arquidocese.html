@@ -11,7 +11,6 @@
     <header>
       <nav>
         <img src="../assets/img/logoIgreja.png" alt="Logo da Igreja, uma igreja branca de telhado vermelho, paredes brancas e contorno dourado" id="logo">
-
         <!--
           CORREÇÃO SC 2.4.7 + SC 4.1.2:
           - Adicionado tabindex="0"  → torna o botão focável por teclado
@@ -25,10 +24,12 @@
           role="button"
           aria-label="Menu hamburguer"
           aria-expanded="false"
+          title="Pressione Enter ou Espaço para abrir o menu"
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span class="sr-only">Pressione Enter ou Espaço para abrir o menu</span>
         </span>
 
         <ul>
