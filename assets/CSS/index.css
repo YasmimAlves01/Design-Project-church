@@ -7,6 +7,11 @@ body > section:first-of-type
   background: url("../img/headerBG.png") center/cover no-repeat;
 }
 
+body > section:first-of-type > p
+{
+  font-size: 35px;
+}
+
 p, h1, h2, h3, li {
   line-height: 1.5;
 }
@@ -115,6 +120,12 @@ section:nth-of-type(3) article figure figcaption {
   font-family: "Centaur";
 }
 
+section:nth-of-type(3) article figure figcaption h3, section:nth-of-type(4) article figure figcaption h3, section:nth-of-type(6) article figure figcaption h3
+{
+  font-size: 36px;
+  font-weight: normal;
+}
+
 section:nth-of-type(3) article figure img {
   width: min(366px, 100%);
   height: auto;
@@ -131,27 +142,50 @@ section:nth-of-type(4) article figure {
 /* ===========================
    Serviços
 =========================== */
-section:nth-of-type(4) article figure {
+
+section:nth-of-type(4) div
+{
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+}
+
+section:nth-of-type(4) div article
+{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-section:nth-of-type(4) article figure figcaption {
-  font-size: 32px;
-  font-weight: 700;
   text-align: center;
+
+  background-color: #f0dbb9;
+  border: 4px solid #5f0000;
+  border-radius: 15px;
+  color: #000;
   font-family: Inter, Arial, Helvetica, sans-serif;
+  gap: 20px;
+  margin: 20px;
+  padding: 20px;
+
+  min-height: 424px;
+  height: 480px;
+  width: min(358px, calc(100vw - 40px));
 }
 
-section:nth-of-type(4) article figure p {
-  font-size: 24px;
-  text-align: center;
-  font-family: Inter, Arial, Helvetica, sans-serif;
+section:nth-of-type(4) div article h3
+{
+  font-size: 30px;
+  
 }
 
-section:nth-of-type(4) article figure a {
+section:nth-of-type(4) div article p
+{
+  font-size: 20px;
+  
+}
+
+section:nth-of-type(4) div article a
+{
   font-weight: 700;
   font-size: 24px;
   color: #f4d860;
@@ -161,12 +195,13 @@ section:nth-of-type(4) article figure a {
   border-radius: 17px;
 }
 
-section:nth-of-type(4) article figure a:hover {
+section:nth-of-type(4) div article a:hover {
   background-color: #f4d860;
   color: #22202d;
   transition: 1.05s;
 }
 
+/**/
 /* ===========================
    Galeria
 =========================== */
@@ -202,6 +237,7 @@ section:nth-of-type(7) {
   min-height: 1002px;
   height: auto;
   background: url("../img/fundopediroracao.png") center/cover no-repeat;
+  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -217,12 +253,13 @@ section:nth-of-type(7) h2 {
   color: #ffffff;
 }
 
-section:nth-of-type(7) h2 {
+section:nth-of-type(7) p {
   text-align: center;
   font-size: clamp(1.5rem, 4vw, 4rem);
   font-weight: 400;
   width: 70%;
   font-family: "Centaur";
+  color: #ffffff;
 }
 
 section:nth-of-type(7) a {
@@ -249,7 +286,7 @@ section:nth-of-type(7) a:hover {
    Media Query
 =========================== */
 @media (max-width: 1400px) {
-  section article {
+  section article, section:nth-of-type(4) div {
     flex-direction: column;
     align-items: center;
   }
