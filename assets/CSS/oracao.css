@@ -1,0 +1,129 @@
+body{
+  background-image: url(../img/fundoOracao.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  line-height: 1.5;
+}
+
+p, h1, h2, h3, li {
+  line-height: 1.5;
+}
+
+header{
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+}
+
+.button-hambuguer span {
+  background: #fff;
+}
+
+main
+{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#linksBrancos a
+{
+  color: #fff;
+}
+
+@media (max-width: 1700px) 
+{
+  #linksBrancos a
+  {
+    color: #000000;
+  }
+}
+
+form
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 70px;
+}
+
+h1
+{
+  font-size: clamp(2.5rem, 8vw, 130px);
+  font-weight: 300;
+  font-family: "Baskerville Old Face";
+}
+
+h2
+{
+ font-size: clamp(2rem, 6vw, 75px);
+  font-weight: 300;
+  font-family: "Baskerville Old Face"; 
+}
+
+input{
+  width: min(40%, 80ch);
+  min-width: min(100%, 320px);
+  height: 60px;
+  border-radius: 0.5vw;
+  border: #f4d860 1px solid;
+  color: #747474;
+  margin-bottom: 15px;
+}
+
+label{
+  width: min(40%, 80ch);
+  min-width: min(100%, 320px);
+  font-size: 30px;
+  font-weight: 200;
+  text-align: left;
+}
+
+textarea
+{
+  width: min(40%, 80ch);
+  min-width: min(100%, 320px);
+  border-radius: 10px;
+}
+
+textarea:hover, input:hover
+{
+  transform: scale(1.01);
+  transition: 0.75s;
+  box-shadow: #ffffff21 0px 3px 8px;
+}
+
+button{
+  width: min(300px, 100%);
+  min-height: 50px;
+  height: auto;
+  border-radius: 30vw;
+  background-color: #caa501;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Baskerville Old Face";
+  color: #fff;
+  margin-top: 15px;
+}
+
+button:hover
+{
+  box-shadow: #ffffff21 0px 3px 8px;
+  color: #e3c84d;
+  background-color: #fff;
+  transform: scale(1.02);
+  transition: transform 1s;
+}
+
+@media (max-width: 900px) {
+  form {
+    margin: 40px 20px;
+  }
+
+  input,
+  label,
+  textarea {
+    width: 100%;
+  }
+}

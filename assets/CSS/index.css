@@ -2,11 +2,24 @@ a {
   text-decoration: none;
 }
 
+body > section:first-of-type 
+{
+  background: url("../img/headerBG.png") center/cover no-repeat;
+}
+
+body > section:first-of-type > p
+{
+  font-size: 35px;
+}
+
+p, h1, h2, h3, li {
+  line-height: 1.5;
+}
+
 /* ===========================
    Card Santo do Dia
 =========================== */
 section:nth-of-type(2) {
-  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,15 +27,15 @@ section:nth-of-type(2) {
 
 section:nth-of-type(2) figure {
   width: 90%;
-  height: 650px;
+  height: auto;
   background-color: #3e1600;
   color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 100px;
-  padding: 50px;
+  gap: clamp(30px, 6vw, 100px);
+  padding: clamp(24px, 4vw, 50px);
   border-radius: 50px;
   background-image: url(../img/image\ 3.png);
   background-repeat: no-repeat;
@@ -31,24 +44,27 @@ section:nth-of-type(2) figure {
 }
 
 section:nth-of-type(2) figure img {
-  width: 380px;
-  height: 490px;
+  width: min(380px, 100%);
+  height: auto;
+  margin-top: 50px;
 }
 
 section:nth-of-type(2) figcaption {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-bottom: 60px;
+
 }
 
 section:nth-of-type(2) figcaption h1 {
-  font-size: 5rem;
+  font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 200;
   font-family: "Baskerville Old Face";
 }
 
 section:nth-of-type(2) figcaption p {
-  font-size: 2rem;
+  font-size: clamp(1.25rem, 2vw, 2rem);
   font-weight: 300;
   font-family: "Centaur";
 }
@@ -63,7 +79,7 @@ section:nth-of-type(2) figcaption p {
    Arquidocese
 =========================== */
 section h2 {
-  font-size: 7.5rem;
+  font-size: clamp(2.25rem, 7vw, 7.5rem);
   font-weight: 300;
   margin-top: 8%;
   margin-bottom: 5%;
@@ -91,8 +107,9 @@ figure {
 }
 
 section:nth-of-type(3) article a figure {
-  width: 414px;
-  height: 573px;
+  width: min(414px, calc(100vw - 40px));
+  min-height: 573px;
+  height: auto;
   border: 3px solid #5f0000;
 }
 
@@ -103,42 +120,72 @@ section:nth-of-type(3) article figure figcaption {
   font-family: "Centaur";
 }
 
+section:nth-of-type(3) article figure figcaption h3, section:nth-of-type(4) article figure figcaption h3, section:nth-of-type(6) article figure figcaption h3
+{
+  font-size: 36px;
+  font-weight: normal;
+}
+
 section:nth-of-type(3) article figure img {
-  width: 366px;
-  height: 363px;
+  width: min(366px, 100%);
+  height: auto;
 }
 
 section:nth-of-type(3) article figure,
 section:nth-of-type(4) article figure {
-  width: 358px;
-  height: 424px;
+  width: min(358px, calc(100vw - 40px));
+  min-height: 424px;
+  height: auto;
   border: 4px solid #5f0000;
 }
 
 /* ===========================
    Serviços
 =========================== */
-section:nth-of-type(4) article figure {
+
+section:nth-of-type(4) div
+{
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+}
+
+section:nth-of-type(4) div article
+{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-section:nth-of-type(4) article figure figcaption {
-  font-size: 32px;
-  font-weight: 700;
   text-align: center;
+
+  background-color: #f0dbb9;
+  border: 4px solid #5f0000;
+  border-radius: 15px;
+  color: #000;
   font-family: Inter, Arial, Helvetica, sans-serif;
+  gap: 20px;
+  margin: 20px;
+  padding: 20px;
+
+  min-height: 424px;
+  height: 480px;
+  width: min(358px, calc(100vw - 40px));
 }
 
-section:nth-of-type(4) article figure p {
-  font-size: 24px;
-  text-align: center;
-  font-family: Inter, Arial, Helvetica, sans-serif;
+section:nth-of-type(4) div article h3
+{
+  font-size: 30px;
+  
 }
 
-section:nth-of-type(4) article figure a {
+section:nth-of-type(4) div article p
+{
+  font-size: 20px;
+  
+}
+
+section:nth-of-type(4) div article a
+{
   font-weight: 700;
   font-size: 24px;
   color: #f4d860;
@@ -148,12 +195,13 @@ section:nth-of-type(4) article figure a {
   border-radius: 17px;
 }
 
-section:nth-of-type(4) article figure a:hover {
+section:nth-of-type(4) div article a:hover {
   background-color: #f4d860;
   color: #22202d;
   transition: 1.05s;
 }
 
+/**/
 /* ===========================
    Galeria
 =========================== */
@@ -164,14 +212,15 @@ section:nth-of-type(4) article figure a:hover {
 =========================== */
 section:nth-of-type(6) article figure {
   display: flex;
-  width: 386px;
-  height: 534px;
+  width: min(386px, calc(100vw - 40px));
+  min-height: 534px;
+  height: auto;
   border: 4px solid #5f0000;
 }
 
 section:nth-of-type(6) article figure img {
-  width: 309px;
-  height: 312px;
+  width: min(309px, 100%);
+  height: auto;
 }
 
 section:nth-of-type(6) article figcaption {
@@ -185,8 +234,10 @@ section:nth-of-type(6) article figcaption {
    Oração
 =========================== */
 section:nth-of-type(7) {
-  height: 1002px;
+  min-height: 1002px;
+  height: auto;
   background: url("../img/fundopediroracao.png") center/cover no-repeat;
+  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -194,34 +245,34 @@ section:nth-of-type(7) {
   gap: 100px;
 }
 
-
-
 section:nth-of-type(7) h2 {
   text-align: center;
   font-weight: 400;
-  font-size: 7rem;
+  font-size: clamp(2.5rem, 6vw, 7rem);
   font-family: "Baskerville Old Face";
   color: #ffffff;
 }
 
-section:nth-of-type(7) h2 {
+section:nth-of-type(7) p {
   text-align: center;
-  font-size: 4rem;
+  font-size: clamp(1.5rem, 4vw, 4rem);
   font-weight: 400;
   width: 70%;
   font-family: "Centaur";
+  color: #ffffff;
 }
 
 section:nth-of-type(7) a {
   border: 1px solid #f7f7f724;
   background: #6464665b;
   backdrop-filter: blur(2px);
-  font-size: 50px;
-  padding: 25px 110px;
+  font-size: clamp(1.5rem, 3vw, 50px);
+  padding: 25px clamp(35px, 7vw, 110px);
   color: #fff;
   border-radius: 100px;
   text-align: center;
   font-family: "Baskerville Old Face";
+  margin-bottom: 90px;
 }
 
 section:nth-of-type(7) a:hover {
@@ -235,7 +286,7 @@ section:nth-of-type(7) a:hover {
    Media Query
 =========================== */
 @media (max-width: 1400px) {
-  section article {
+  section article, section:nth-of-type(4) div {
     flex-direction: column;
     align-items: center;
   }
@@ -253,7 +304,7 @@ section:nth-of-type(7) a:hover {
   }
 
   section:nth-of-type(7) h1 {
-    font-size: 100px;
+    font-size: clamp(2.5rem, 7vw, 100px);
   }
 
   section:nth-of-type(7) h2 {
