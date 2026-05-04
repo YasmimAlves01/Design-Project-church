@@ -70,6 +70,7 @@ input{
   border: #f4d860 1px solid;
   color: #747474;
   margin-bottom: 15px;
+  padding: 0 16px;
 }
 
 label{
@@ -85,6 +86,7 @@ textarea
   width: min(40%, 80ch);
   min-width: min(100%, 320px);
   border-radius: 10px;
+  padding: 16px;
 }
 
 textarea:hover, input:hover
