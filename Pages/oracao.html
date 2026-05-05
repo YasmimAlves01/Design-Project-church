@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="../assets/CSS/main.css">
     <link rel="stylesheet" href="../assets/CSS/oracao.css">
   </head>
+
   <body>
     <header>
-      <nav>
+      <nav aria-label="Menu principal">
         <img src="../assets/img/logoIgreja.png" alt="" id="logo">
 
         <span
@@ -42,25 +43,25 @@
           id="barraPesquisa"
           name="busca"
           aria-label="Buscar no site"
-          placeholder="Digite o que voce esta buscando"
+          placeholder="Digite o que você está buscando"
           autocomplete="off"
         >
       </nav>
     </header>
 
-    <main>
+    <main aria-label="Formulário de pedido de oração">
       <h1>Peça uma oração</h1>
 
-      <form action="" method="post">
+      <form action="" method="post" aria-label="Formulário de envio de pedido de oração">
+        
         <label for="nome">Nome*</label>
         <input
           type="text"
           id="nome"
           name="nome"
-          placeholder="Digite seu Nome"
+          placeholder="Digite seu nome"
           autocomplete="name"
           required
-          aria-required="true"
         >
 
         <label for="email">E-mail*</label>
@@ -68,10 +69,9 @@
           type="email"
           id="email"
           name="email"
-          placeholder="Digite seu E-mail"
+          placeholder="Digite seu e-mail"
           autocomplete="email"
           required
-          aria-required="true"
         >
 
         <label for="mensagem">Pedido de oração*</label>
@@ -80,27 +80,28 @@
           id="mensagem"
           placeholder="Escreva sobre a sua dor ou seu pedido"
           rows="4"
-          cols="50"
           required
-          aria-required="true"
         ></textarea>
 
-        <button type="submit" aria-label="Enviar oração">Enviar</button>
+        <button type="submit" aria-label="Enviar pedido de oração">
+          Enviar
+        </button>
       </form>
 
       <a href="#logo">
         <img
           src="../assets/img/topo.png"
-          alt="icone de topo"
+          alt=""
           id="irtopo"
-          aria-label="Voltar ao Topo da Pagina"
+          aria-label="Voltar ao topo da página"
         >
       </a>
     </main>
 
-    <footer>
-      <address>
+    <footer aria-label="Rodapé com informações de contato">
+      <address aria-label="Informações de contato">
         <img src="../assets/img/logoIgreja.png" alt="">
+
         <ul>
           <li>
             <a href="https://www.instagram.com/igrejaortodoxasaojorge323/">
@@ -108,20 +109,23 @@
               igrejaortodoxasaojorge323
             </a>
           </li>
+
           <li>
-            <a href="https://www.google.com.br/maps/place/Av.+Ana+Costa,+323+-+Encruzilhada,+Santos+-+SP,+11060-001/@-23.9579287,-46.3340322,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce030d01896197:0x38d0ff3cd2ead4bc!8m2!3d-23.9579287!4d-46.3314573!16s%2Fg%2F11bw4k1598?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D">
+            <a href="https://www.google.com.br/maps/place/...">
               <img src="../assets/img/loc.png" alt="">
               Av. Ana Costa, 323, Gonzaga, Santos, SP
             </a>
           </li>
+
           <li>
             <a href="tel:+5513997329315">
               <img src="../assets/img/telefone.png" alt="">
               (13) 99732-9315
             </a>
           </li>
+
           <li>
-            <a href="mailto:secretariasaojorge@outlook.com?subject=Contato%20pelo%20site&body=Olá,%20gostaria%20de%20mais%20informações.">
+            <a href="mailto:secretariasaojorge@outlook.com">
               <img src="../assets/img/email.png" alt="">
               secretariasaojorge@outlook.com
             </a>
