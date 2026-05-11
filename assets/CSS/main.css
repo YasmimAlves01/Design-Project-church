@@ -95,6 +95,7 @@ header nav ul li a {
   color: #747474;
   font-family: Centaur;
   transition: 0.5s;
+  text-overflow: ellipsis;
 }
 
 #barraPesquisa:hover {

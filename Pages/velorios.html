@@ -9,9 +9,9 @@
   </head>
   <body>
     <header>
-      <nav>
-        <img src="../assets/img/logoIgreja.png" alt="" id="logo">
-       <span
+      <nav aria-label="Menu principal">
+        <img src="../assets/img/logoIgreja.png" alt="Logo da Igreja Católica Apostólica Ortodoxa São Jorge" id="logo">
+        <span
           class="button-hambuguer"
           id="hamburgerBtn"
           tabindex="0"
@@ -25,7 +25,6 @@
           <span aria-hidden="true"></span>
           <span class="sr-only">Pressione Enter ou Espaço para abrir o menu</span>
         </span>
-        
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="../index.html#arquidiocese">Arquidocese</a></li>
@@ -35,23 +34,21 @@
           <li><a href="../index.html#oracao">Oração</a></li>
           <li><a href="../index.html#redes">Redes</a></li>
         </ul>
-        <input type="text" id="barraPesquisa" placeholder="Digite o que você está buscando">
-      </nav>
+        <input type="search" id="barraPesquisa" placeholder="Digite o que você está buscando">      </nav>
     </header>
-    <!-- Seção inicial com título, subtítulo e versículo -->
-    <section id="titulo">
+    <section id="titulo" aria-label="Apresentação da Igreja">
       <h1>Igreja Católica Apostólica<br> Ortodoxa São Jorge</h1>
       <p>"Em Antioquia, pela primeira vez,<br> foram os discípulos chamados cristãos"</p>
       <p>Atos dos Apóstolos 11:26</p>
     </section>
-    <main>
+    <main aria-label="Conteúdo do serviço">
       <h2>Serviços</h2>
-      <section>
-        <h3>Batizados</h3>
-        <p><q>Eu sou a ressureição e a vida</q> (João 11:25).</p>
+      <section aria-label="Apresentação do serviço">
+        <h3>Velórios</h3>
+        <p>"Eu sou a ressurreição e a vida" (João 11:25).</p>
       </section>
-      <section>
-        <article>
+      <section aria-label="Detalhes e informações">
+        <article aria-label="Texto explicativo">
           <dl>
             <dt>Segunda a Sexta:</dt>
             <dd>10:30 – 13:00 | 15:30 – 18:00</dd>
@@ -64,8 +61,8 @@
           <h4>A Sala de Velórios da Catedral</h4>
           <p>Nossa Sala de Velórios conta com um espaço amplo para os convidados sentarem-se, com sofás, bancos, cadeiras e mesas. Também conta com ar condicionado, uma máquina de café e banheiros masculino e feminino.</p>
           <h4>Velórios na Sala de Velório da Catedral</h4>
-          <p>Para agendar o uso da sala de velório é necessário ligar para o número (11) 5907-8610.</p>
-          <p>Será preciso informar o nome do falecido(a), o horário de chegada e de saída da Catedral do corpo do falecido e o cemitério no qual o corpo será sepultado.</p>
+          <p>Para agendar o uso da sala de velório é necessário <a href="tel:+551159078610">(11) 5907-8610</a>.</p>
+          <p>Será necessário informar o nome do(a) falecido(a), o horário de chegada e de saída da Catedral do corpo do falecido e o cemitério no qual o corpo será sepultado.</p>
           <p>O horário de funcionamento da sala de velório é das 07:00h às 23:00h, podendo o velório ter continuidade na manhã do dia seguinte da chegada se necessário.</p>
           <p>O serviço oferecido pela Igreja é o uso da sala de velório. Porém, um sacerdote de nossa Igreja realizará o Ofício Fúnebre durante o velório se a família assim desejar.</p>
           <h4>Velórios externos</h4>
@@ -73,13 +70,12 @@
           <p>Será necessário informar o nome do falecido, local e horário do velório. É também preciso disponibilizar e agendar com a Igreja a busca e retorno do padre que realizará as orações no local desejado.</p>
         </article>
         <figure>
-          <img src="../assets/img/servicos/velorios.png" alt="">
+          <img src="../assets/img/servicos/velorios.png" alt="Sala de velório da catedral com assentos e estrutura para cerimônias fúnebres">
         </figure>
-        <!-- Botão para voltar ao topo da página -->
-        <a href="#"><img src="../assets/img/topo.png" alt="" id="irtopo" aria-label="Voltar ao Topo da Pagina"></a>
+        <a href="#logo"><img src="../assets/img/topo.png" alt="" id="irtopo" aria-label="Voltar ao Topo da Pagina"></a>
       </section>
     </main>
-    <footer>
+    <footer aria-label="Rodapé com informações de contato">
       <address>
         <img src="../assets/img/logoIgreja.png" alt="">
         <ul>
