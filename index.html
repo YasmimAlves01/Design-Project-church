@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/CSS/main.css">
     <link rel="stylesheet" href="assets/CSS/index.css">
     <link rel="stylesheet" href="assets/CSS/slider.css">
+    <link rel="stylesheet" href="assets/CSS/acessibilidade.css">
   </head>
   <body>
     <header>
@@ -45,6 +46,21 @@
         <!-- <input type="text" id="barraPesquisa" placeholder="Digite o que você está buscando"> -->
       </nav>
     </header>
+
+    <!-- acessibilidade -->
+
+    <div id="barraAcessibilidade">
+      <img src="assets/img/acessibilidade.png" id="btnAbrir" alt="Menu de Acessibilidade" style="cursor:pointer">
+    
+      <div id="opcoesAcessibilidade" style="display: none;">
+        <button id="aumentarFonte">A+</button>
+        <button id="diminuirFonte">A-</button>
+        <button id="toggleCinza">Preto e Branco</button>
+        <button id="toggleInverter">Inverter Cores</button>
+        <button id="toggleLinks">Destacar Links</button>
+      </div>
+    </div>
+
     <!-- Seção inicial com título, subtítulo e versículo -->
     <section id="titulo">
       <h1>Igreja Católica Apostólica<br> Ortodoxa São Jorge</h1>
@@ -234,6 +250,7 @@
       <p>Entre em contato, conte sua aflição e receba uma palavra ou oração do Padre Dimitrios Attarian</p>
       <a href="Pages/oracao.html" aria-label="Ir para a pagina de Pedir Oração">Pedir Oração</a>
     </section>
+
     <!-- Rodapé -->
     <footer id="redes">
       <address>
@@ -250,6 +267,8 @@
         Gabriel da Cunha | Giulia de Moura | Kauê Santos | Yasmim de Castro | Yasmim Rodrigues</p>
       </div>
     </footer>
+    <!-- Acessibilidade -->
+  	<script src="script/acessibilidade.js"></script>
     <script src="script/slider.js"></script>
     <script src="script/hamburguerMenu.js"></script>
   </body>

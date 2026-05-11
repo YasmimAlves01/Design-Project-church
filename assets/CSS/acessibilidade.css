@@ -1,0 +1,17 @@
+.coresCinza 
+{
+  filter: grayscale(100%);
+}
+
+.inverterCores
+{
+  filter: invert(100%);
+}
+
+.linksDestacados a 
+{
+  background-color: yellow !important;
+  color: black !important;
+  font-weight: bold !important;
+  text-decoration: underline !important;
+}
