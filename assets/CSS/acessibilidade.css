@@ -18,7 +18,7 @@
 
 #barraAcessibilidade {
   display: flex;
-  position: fixed;
+  position: sticky;
   top: 248px;
   right: 0;
   color: black;
@@ -45,7 +45,7 @@
   border: 0;
   width: 100%;
   padding: 10px;
-  text-align: left;
+  text-align: center;
 }
 
 #opcoesAcessibilidade button:hover {
