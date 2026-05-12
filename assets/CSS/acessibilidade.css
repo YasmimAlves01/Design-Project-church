@@ -15,3 +15,40 @@
   font-weight: bold !important;
   text-decoration: underline !important;
 }
+
+#barraAcessibilidade {
+  display: flex;
+  position: fixed;
+  top: 248px;
+  right: 0;
+  color: black;
+  z-index: 99999;
+  flex-direction: row-reverse;
+}
+
+#btnAbrir {
+  width: 40px;
+  height: 40px;
+}
+
+#opcoesAcessibilidade {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  max-width: 226px;
+  border: 1px solid #ddd;
+}
+
+#opcoesAcessibilidade button {
+  background-color: #FFF;
+  border: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+}
+
+#opcoesAcessibilidade button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
