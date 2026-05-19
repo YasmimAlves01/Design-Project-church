@@ -1,4 +1,41 @@
 /* =========================================================
+   VARIÁVEIS DE COR
+========================================================= */
+
+:root {
+  /* Cores principais */
+  --cor-fundo:            #fdf5ec;      /* fundo geral da página */
+  --cor-destaque:         #f4d860;      /* amarelo dourado – botões e bordas de ênfase */
+  --cor-destaque-suave:   #f4d96036;   /* amarelo com baixa opacidade – sombras */
+  --cor-destaque-hover:   #f0dbb9;     /* bege dourado – hover de links no menu mobile */
+
+  /* Header */
+  --cor-header-fundo:     #22202d30;   /* fundo escuro semitransparente do header */
+
+  /* Texto e neutros */
+  --cor-texto-escuro:     #000;        /* texto padrão escuro */
+  --cor-texto-claro:      #f5f5f5;    /* texto claro (footer) */
+  --cor-texto-branco:     #fff;        /* branco puro */
+  --cor-texto-placeholder:#747474;    /* placeholder da barra de pesquisa */
+
+  /* Menu mobile */
+  --cor-menu-fundo:       #ffffff;     /* fundo do menu hambúrguer */
+  --cor-hamburguer-linha: #000;        /* cor das linhas do ícone hambúrguer */
+
+  /* Barra de pesquisa */
+  --cor-pesquisa-fundo:   #fff;
+  --cor-pesquisa-borda:   #f4d860;     /* reutiliza --cor-destaque */
+
+  /* Footer */
+  --cor-footer-fundo:     #5f0000;     /* vermelho escuro do rodapé */
+
+  /* Foco (acessibilidade) */
+  --cor-foco:             #005fcc;     /* azul de foco – SC 2.4.7 */
+  --cor-foco-sombra:      rgba(0, 95, 204, 0.2);   /* sombra do foco na pesquisa */
+  --cor-foco-bg-nav:      rgba(0, 95, 204, 0.08);  /* fundo sutil no foco de links do nav */
+}
+
+/* =========================================================
    RESET / GLOBAL
 ========================================================= */
 
@@ -10,7 +47,7 @@
 
 body {
   background-image: url(../img/fundo.jpg);
-  background-color: #fdf5ec;
+  background-color: var(--cor-fundo);
   overflow-x: hidden;
   line-height: 1.5;
 }
@@ -32,7 +69,7 @@ body.no-scroll {
 /* Botão voltar ao topo */
 #irtopo {
   background-image: url(../img/topo.png);
-  background-color: #f4d860;
+  background-color: var(--cor-destaque);
   border-radius: 50px;
   width: 60px;
   height: 60px;
@@ -47,7 +84,7 @@ body.no-scroll {
 ========================================================= */
 
 header {
-  background-color: #22202d30;
+  background-color: var(--cor-header-fundo);
   border-radius: 0 0 50px 50px;
 }
 
@@ -80,26 +117,26 @@ header nav ul {
 }
 
 header nav ul li a {
-  color: #000;
+  color: var(--cor-texto-escuro);
   font-size: clamp(1.1rem, 1rem + 0.8vw, 2rem);
 }
 
 #barraPesquisa {
   width: min(422px, 100%);
   height: 45px;
-  background-color: #fff;
-  border: 1px solid #f4d860;
+  background-color: var(--cor-pesquisa-fundo);
+  border: 1px solid var(--cor-pesquisa-borda);
   border-radius: 20px;
   padding-left: 20px;
   font-size: 20px;
-  color: #747474;
+  color: var(--cor-texto-placeholder);
   font-family: Centaur;
   transition: 0.5s;
   text-overflow: ellipsis;
 }
 
 #barraPesquisa:hover {
-  box-shadow: #f4d96036 0px 5px 8px;
+  box-shadow: var(--cor-destaque-suave) 0px 5px 8px;
 }
 
 /* =========================================================
@@ -118,7 +155,7 @@ header nav ul li a {
 .button-hambuguer span {
   width: 30px;
   height: 3px;
-  background: #000;
+  background: var(--cor-hamburguer-linha);
   border-radius: 5px;
   transition: 0.3s;
 }
@@ -142,7 +179,7 @@ header nav ul li a {
     position: absolute;
     top: 120px;
     right: 0;
-    background: #ffffff;
+    background: var(--cor-menu-fundo);
     width: 100%;
     height: 100vh;
     flex-direction: column;
@@ -159,13 +196,13 @@ header nav ul li a {
 
   nav ul li a {
     text-decoration: none;
-    text-underline-offset: 4px;  
+    text-underline-offset: 4px;
     transition: text-decoration-color 0.2s ease;
   }
 
   nav ul li a:hover {
     text-decoration: underline;
-    text-decoration-color: #f0DBB9;
+    text-decoration-color: var(--cor-destaque-hover);
   }
 
   nav input {
@@ -236,23 +273,21 @@ p, li, dd, dt, h1, h2, h3, h4, h5, h6, figcaption, label, blockquote {
 }
 
 q {
-  quotes: "“" "”" "‘" "’";
+  quotes: """ """ "'" "'";
 }
-
-
 
 /* FOOTER */
 footer {
-  background-color: #5f0000;
+  background-color: var(--cor-footer-fundo);
   background-image: url("../img/footerBG.png");
   background-position: right bottom;
   background-repeat: no-repeat;
-  color: #f5f5f5;
+  color: var(--cor-texto-claro);
   padding: 100px 40px;
 }
 
 footer a {
-  color: #f5f5f5;
+  color: var(--cor-texto-claro);
 }
 
 footer address {
@@ -288,7 +323,7 @@ footer address ul li a {
   display: flex;
   align-items: center;
   gap: 12px;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 footer address ul li img {
@@ -298,7 +333,7 @@ footer address ul li img {
 
 footer div {
   text-align: center;
-  color: #fff;
+  color: var(--cor-texto-branco);
   font-size: 22px;
   margin-top: 70px;
   line-height: 1.5;
@@ -309,39 +344,39 @@ footer div {
 ===================================================== */
 
 :focus-visible {
-  outline: 3px solid #005FCC;
+  outline: 3px solid var(--cor-foco);
   outline-offset: 3px;
   border-radius: 4px;
 }
 
 nav a:focus-visible {
-  outline: 3px solid #005FCC;
+  outline: 3px solid var(--cor-foco);
   outline-offset: 4px;
   border-radius: 4px;
-  background-color: rgba(0, 95, 204, 0.08);
+  background-color: var(--cor-foco-bg-nav);
 }
 
 #barraPesquisa:focus-visible {
-  outline: 3px solid #005FCC;
+  outline: 3px solid var(--cor-foco);
   outline-offset: 0px;
   border-radius: 4px;
-  box-shadow: 0 0 0 4px rgba(0, 95, 204, 0.2);
+  box-shadow: 0 0 0 4px var(--cor-foco-sombra);
 }
 
 #hamburgerBtn:focus-visible {
-  outline: 3px solid #005FCC;
+  outline: 3px solid var(--cor-foco);
   outline-offset: 5px;
   border-radius: 4px;
 }
 
 #irtopo:focus-visible {
-  outline: 3px solid #005FCC;
+  outline: 3px solid var(--cor-foco);
   outline-offset: 4px;
   border-radius: 4px;
 }
 
 footer a:focus-visible {
-  outline: 3px solid #005FCC;
+  outline: 3px solid var(--cor-foco);
   outline-offset: 4px;
   border-radius: 4px;
 }
@@ -406,13 +441,14 @@ footer a:focus-visible {
     width: 250px;
   }
 }
+
 @media (max-width: 1700px) {
   nav ul {
     position: fixed;
     top: 120px;
     right: 0;
     left: 0;
-    background: #ffffff;
+    background: var(--cor-menu-fundo);
     width: 100%;
     height: 100vh;
     flex-direction: column;

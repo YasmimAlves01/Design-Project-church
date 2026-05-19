@@ -1,27 +1,40 @@
-.coresCinza 
-{
+:root {
+  --cor-links-destaque-fundo:  yellow;          /* fundo dos links destacados */
+  --cor-links-destaque-texto:  black;           /* texto dos links destacados */
+  --cor-acessibilidade-borda:  #ddd;            /* borda do painel de opções */
+  --cor-acessibilidade-fundo:  #fff;            /* fundo do painel e dos botões */
+  --cor-acessibilidade-texto:  black;           /* texto da barra de acessibilidade */
+}
+
+/* =========================================================
+   FILTROS GLOBAIS
+========================================================= */
+
+.coresCinza {
   filter: grayscale(100%);
 }
 
-.inverterCores
-{
+.inverterCores {
   filter: invert(100%);
 }
 
-.linksDestacados a 
-{
-  background-color: yellow !important;
-  color: black !important;
+.linksDestacados a {
+  background-color: var(--cor-links-destaque-fundo) !important;
+  color: var(--cor-links-destaque-texto) !important;
   font-weight: bold !important;
   text-decoration: underline !important;
 }
+
+/* =========================================================
+   BARRA DE ACESSIBILIDADE
+========================================================= */
 
 #barraAcessibilidade {
   display: flex;
   position: sticky;
   top: 248px;
   right: 0;
-  color: black;
+  color: var(--cor-acessibilidade-texto);
   z-index: 99999;
   flex-direction: row-reverse;
 }
@@ -34,14 +47,13 @@
 #opcoesAcessibilidade {
   display: flex;
   flex-direction: column;
-  border: 1px solid #ddd;
-  background-color: #fff;
+  border: 1px solid var(--cor-acessibilidade-borda);
+  background-color: var(--cor-acessibilidade-fundo);
   max-width: 226px;
-  border: 1px solid #ddd;
 }
 
 #opcoesAcessibilidade button {
-  background-color: #FFF;
+  background-color: var(--cor-acessibilidade-fundo);
   border: 0;
   width: 100%;
   padding: 10px;

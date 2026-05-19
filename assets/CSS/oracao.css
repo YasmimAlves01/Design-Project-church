@@ -1,4 +1,17 @@
-body{
+:root {
+  --cor-header-sombra:         rgba(255, 255, 255, 0.2);  /* sombra do header */
+  --cor-hamburguer-oracao:     #fff;                       /* linha do hambúrguer (sobrescreve para branco) */
+  --cor-formulario-sombra:     #ffffff21;                  /* sombra hover dos campos do form */
+  --cor-botao-fundo:           #caa501;                    /* dourado escuro do botão enviar */
+  --cor-botao-hover-texto:     #e3c84d;                    /* amarelo claro do texto no hover do botão */
+  --cor-links-nav-mobile:      #000000;                    /* cor dos links do nav no mobile (menu aberto) */
+}
+
+/* =========================================================
+   BASE
+========================================================= */
+
+body {
   background-image: url(../img/fundoOracao.svg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -9,38 +22,41 @@ p, h1, h2, h3, li {
   line-height: 1.5;
 }
 
-header{
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+header {
+  box-shadow: var(--cor-header-sombra) 0px 7px 29px 0px;
 }
 
 .button-hambuguer span {
-  background: #fff;
+  background: var(--cor-hamburguer-oracao);
 }
 
-main
-{
-  color: #fff;
+/* =========================================================
+   CONTEÚDO PRINCIPAL
+========================================================= */
+
+main {
+  color: var(--cor-texto-branco);
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
-#linksBrancos a
-{
-  color: #fff;
+#linksBrancos a {
+  color: var(--cor-texto-branco);
 }
 
-@media (max-width: 1700px) 
-{
-  #linksBrancos a
-  {
-    color: #000000;
+@media (max-width: 1700px) {
+  #linksBrancos a {
+    color: var(--cor-links-nav-mobile);
   }
 }
 
-form
-{
+/* =========================================================
+   FORMULÁRIO
+========================================================= */
+
+form {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,32 +64,30 @@ form
   margin: 70px;
 }
 
-h1
-{
+h1 {
   font-size: clamp(2.5rem, 8vw, 130px);
   font-weight: 300;
   font-family: "Baskerville Old Face";
 }
 
-h2
-{
- font-size: clamp(2rem, 6vw, 75px);
+h2 {
+  font-size: clamp(2rem, 6vw, 75px);
   font-weight: 300;
-  font-family: "Baskerville Old Face"; 
+  font-family: "Baskerville Old Face";
 }
 
-input{
+input {
   width: min(40%, 80ch);
   min-width: min(100%, 320px);
   height: 60px;
   border-radius: 0.5vw;
-  border: #f4d860 1px solid;
-  color: #747474;
+  border: var(--cor-destaque) 1px solid;
+  color: var(--cor-texto-placeholder);
   margin-bottom: 15px;
   padding: 0 16px;
 }
 
-label{
+label {
   width: min(40%, 80ch);
   min-width: min(100%, 320px);
   font-size: 30px;
@@ -81,39 +95,37 @@ label{
   text-align: left;
 }
 
-textarea
-{
+textarea {
   width: min(40%, 80ch);
   min-width: min(100%, 320px);
   border-radius: 10px;
   padding: 16px;
 }
 
-textarea:hover, input:hover
-{
+textarea:hover,
+input:hover {
   transform: scale(1.01);
   transition: 0.75s;
-  box-shadow: #ffffff21 0px 3px 8px;
+  box-shadow: var(--cor-formulario-sombra) 0px 3px 8px;
 }
 
-button{
+button {
   width: min(300px, 100%);
   min-height: 50px;
   height: auto;
   border-radius: 30vw;
-  background-color: #caa501;
+  background-color: var(--cor-botao-fundo);
   font-size: 30px;
   font-weight: 400;
   font-family: "Baskerville Old Face";
-  color: #fff;
+  color: var(--cor-texto-branco);
   margin-top: 15px;
 }
 
-button:hover
-{
-  box-shadow: #ffffff21 0px 3px 8px;
-  color: #e3c84d;
-  background-color: #fff;
+button:hover {
+  box-shadow: var(--cor-formulario-sombra) 0px 3px 8px;
+  color: var(--cor-botao-hover-texto);
+  background-color: var(--cor-texto-branco);
   transform: scale(1.02);
   transition: transform 1s;
 }

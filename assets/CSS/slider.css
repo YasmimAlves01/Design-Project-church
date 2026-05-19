@@ -1,3 +1,11 @@
+:root {
+  --cor-seta-hover-fundo: rgba(0, 0, 0, 0.8);   /* fundo das setas ao passar o mouse */
+}
+
+/* =========================================================
+   BASE
+========================================================= */
+
 * {
   box-sizing: border-box;
 }
@@ -6,14 +14,16 @@ p, h1, h2, h3, li {
   line-height: 1.5;
 }
 
-/* Slideshow container */
+/* =========================================================
+   SLIDESHOW
+========================================================= */
+
 .slide-container {
   max-width: min(1000px, 100%);
   position: relative;
   margin: auto;
 }
 
-/* Hide the images by default */
 .slide-item {
   display: none;
 }
@@ -27,7 +37,10 @@ p, h1, h2, h3, li {
   margin-top: 30px;
 }
 
-/* Next & previous buttons */
+/* =========================================================
+   SETAS PREV / NEXT
+========================================================= */
+
 .prev,
 .next {
   cursor: pointer;
@@ -47,25 +60,26 @@ p, h1, h2, h3, li {
   word-spacing: 0.16em;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--cor-seta-hover-fundo);
 }
 
-/* The dots/bullets/indicators */
+/* =========================================================
+   DOTS / INDICADORES
+========================================================= */
+
 .dot {
   cursor: pointer;
   height: 25px;
   width: 25px;
   margin: 0 2px;
-  border: 3px solid #5f0000;
+  border: 3px solid var(--cor-card-borda);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -73,20 +87,19 @@ p, h1, h2, h3, li {
 
 /*.active,
 .dot:hover {
-  background-color: #5f0000;
+  background-color: var(--cor-card-borda);
 }*/
 
-/* Fading animation */
+/* =========================================================
+   ANIMAÇÃO DE FADE
+========================================================= */
+
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0.4; }
+  to   { opacity: 1; }
 }
