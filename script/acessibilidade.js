@@ -21,9 +21,11 @@ document.getElementById('diminuirFonte').addEventListener('click', () => {
     }
 });
 
-document.getElementById('toggleCinza').addEventListener('click', () => {
-    document.body.classList.toggle('coresCinza');
+document.getElementById('toggleEscuro').addEventListener('click', () => {
+    const ativo = document.body.classList.toggle('modoEscuro');
+    localStorage.setItem('modoEscuro', ativo);
 });
+
 
 document.getElementById('toggleInverter').addEventListener('click', () => {
     document.body.classList.toggle('inverterCores');

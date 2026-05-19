@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Igreja Católica Apostólica Ortodoxa São Jorge</title>
     <link rel="stylesheet" href="../assets/CSS/main.css">
+    <link rel="stylesheet" href="../assets/CSS/acessibilidade.css">
+    <link rel="stylesheet" href="../assets/CSS/dark-theme.css">
   </head>
-
   <body>
     <header>
       <nav aria-label="Menu principal">
@@ -40,7 +41,17 @@
         <input type="text" id="barraPesquisa" placeholder="Digite o que você está buscando">
       </nav>
     </header>
-
+    <div id="barraAcessibilidade">
+      <img src="../assets/img/acessibilidade.png" id="btnAbrir" alt="Menu de Acessibilidade" style="cursor:pointer">
+    
+      <div id="opcoesAcessibilidade" style="display: none;">
+        <button id="aumentarFonte">A+</button>
+        <button id="diminuirFonte">A-</button>
+        <button id="toggleEscuro">Modo Escuro</button>
+        <button id="toggleInverter">Inverter Cores</button>
+        <button id="toggleLinks">Destacar Links</button>
+      </div>
+    </div>
     <section id="titulo" aria-label="Apresentação da página">
       <h1>Igreja Católica Apostólica<br> Ortodoxa São Jorge</h1>
       <p>"Em Antioquia, pela primeira vez,<br> foram os discípulos chamados cristãos"</p>
@@ -93,7 +104,7 @@
         </p>
       </div>
     </footer>
-
+  	<script src="../script/acessibilidade.js"></script>
     <script src="../script/hamburguerMenu.js"></script>
   </body>
 </html>

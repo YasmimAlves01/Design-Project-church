@@ -1,21 +1,27 @@
 :root {
-  --cor-links-destaque-fundo:  yellow;          /* fundo dos links destacados */
-  --cor-links-destaque-texto:  black;           /* texto dos links destacados */
-  --cor-acessibilidade-borda:  #ddd;            /* borda do painel de opções */
-  --cor-acessibilidade-fundo:  #fff;            /* fundo do painel e dos botões */
-  --cor-acessibilidade-texto:  black;           /* texto da barra de acessibilidade */
+  --cor-links-destaque-fundo:  yellow;
+  --cor-links-destaque-texto:  black;
+  --cor-acessibilidade-borda:  #ddd;
+  --cor-acessibilidade-fundo:  #fff;
+  --cor-acessibilidade-texto:  black;
 }
 
 /* =========================================================
    FILTROS GLOBAIS
+   Aplicados no body, mas cancelados no próprio painel
 ========================================================= */
 
-.coresCinza {
+.coresCinza body > *:not(#barraAcessibilidade) {
   filter: grayscale(100%);
 }
 
-.inverterCores {
+.inverterCores body > *:not(#barraAcessibilidade) {
   filter: invert(100%);
+}
+
+/* Quando ambos estão ativos ao mesmo tempo */
+.coresCinza.inverterCores body > *:not(#barraAcessibilidade) {
+  filter: grayscale(100%) invert(100%);
 }
 
 .linksDestacados a {
@@ -26,22 +32,38 @@
 }
 
 /* =========================================================
-   BARRA DE ACESSIBILIDADE
+   BARRA DE ACESSIBILIDADE — flutuante e isolada
 ========================================================= */
 
 #barraAcessibilidade {
-  display: flex;
-  position: sticky;
+  /* Fixo na viewport — completamente fora do fluxo do body */
+  position: fixed;
   top: 248px;
   right: 0;
-  color: var(--cor-acessibilidade-texto);
   z-index: 99999;
+
+  display: flex;
   flex-direction: row-reverse;
+  align-items: flex-start;
+
+  /* Garante contexto de empilhamento próprio */
+  isolation: isolate;
+
+  /* Cancela qualquer filter herdado do body (cinza, inverter) */
+  filter: none !important;
+
+  color: var(--cor-acessibilidade-texto);
+
+  /* Impede que cliques "vazem" para elementos abaixo */
+  pointer-events: auto;
 }
 
 #btnAbrir {
   width: 40px;
   height: 40px;
+  cursor: pointer;
+  /* Sem border-radius nem fundo — mantém a imagem original */
+  flex-shrink: 0;
 }
 
 #opcoesAcessibilidade {
@@ -50,14 +72,19 @@
   border: 1px solid var(--cor-acessibilidade-borda);
   background-color: var(--cor-acessibilidade-fundo);
   max-width: 226px;
+
+  /* Sem sombra ou efeito que interaja com o restante */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 #opcoesAcessibilidade button {
   background-color: var(--cor-acessibilidade-fundo);
+  color: var(--cor-acessibilidade-texto);
   border: 0;
   width: 100%;
   padding: 10px;
   text-align: center;
+  font-size: 14px;
 }
 
 #opcoesAcessibilidade button:hover {
