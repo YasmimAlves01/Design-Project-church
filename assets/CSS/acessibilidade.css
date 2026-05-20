@@ -39,7 +39,7 @@
   /* Fixo na viewport — completamente fora do fluxo do body */
   position: fixed;
   top: 248px;
-  right: 0;
+  right: 10px;
   z-index: 99999;
 
   display: flex;

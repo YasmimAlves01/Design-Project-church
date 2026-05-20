@@ -2,6 +2,15 @@ let tamanhoFonteAtual = 100; //porcentagem padrão da fonte
 const btnAbrir = document.getElementById('btnAbrir');
 const menu = document.getElementById('opcoesAcessibilidade');
 
+document.addEventListener('DOMContentLoaded', () => {
+  const script = document.createElement('script');
+  script.src = 'https://vlibras.gov.br/app/vlibras-plugin.js';
+  script.onload = () => {
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  };
+  document.head.appendChild(script);
+});
+
 btnAbrir.addEventListener('click', () => {
     menu.style.display = (menu.style.display === 'none') ? 'block' : 'none';
 });
@@ -29,6 +38,10 @@ document.getElementById('toggleEscuro').addEventListener('click', () => {
 
 document.getElementById('toggleInverter').addEventListener('click', () => {
     document.body.classList.toggle('inverterCores');
+});
+
+document.getElementById('toggleLinks').addEventListener('click', () => {
+    document.body.classList.toggle('linksDestacados');
 });
 
 document.getElementById('toggleLinks').addEventListener('click', () => {
