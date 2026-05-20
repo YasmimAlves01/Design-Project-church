@@ -5,18 +5,18 @@
 body.modoEscuro {
 
   /* ---------- main.css ---------- */
-  --cor-fundo:              #1a1814;
+  --cor-fundo:              #27282A;
   --cor-destaque:           #c9a227;
   --cor-destaque-suave:     #c9a22720;
   --cor-destaque-hover:     #3a2e0f;
   --cor-header-fundo:       #00000060;
-  --cor-texto-escuro:       #e8e2d9;
+  --cor-texto-escuro:       #ffffff;
   --cor-texto-claro:        #c0b8ae;
   --cor-texto-branco:       #ffffff;
   --cor-texto-placeholder:  #9a9690;
   --cor-menu-fundo:         #1e1c28;
   --cor-hamburguer-linha:   #e8e2d9;
-  --cor-pesquisa-fundo:     #1e1c28;
+  --cor-pesquisa-fundo:     #e5e5e5;
   --cor-pesquisa-borda:     #c9a227;
   --cor-footer-fundo:       #3d0000;
   --cor-foco:               #4d94ff;
@@ -25,7 +25,7 @@ body.modoEscuro {
 
   /* ---------- index.css ---------- */
   --cor-card-santo-fundo:     #1e0a00;
-  --cor-card-borda:           #7a0000;
+  --cor-card-borda:           #C49F00;
   --cor-card-fundo:           #2a2215;
   --cor-servico-fundo:        #141320;
   --cor-servico-sombra:       #00000060;
@@ -56,27 +56,60 @@ body.modoEscuro {
 /* ---------- #titulo — hero com headerBG.png ---------- */
 body.modoEscuro section#titulo {
   background: #1a1814;
+  background-image: url(../img/headerBG.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: var( --cor-texto-branco)
 }
 
 /* ---------- seção do Santo do Dia (2ª section, sem id) ---------- */
 body.modoEscuro section:nth-of-type(2) figure {
-  background-image: none;
+  background-image: url(../img/borda.png);
   background-color: var(--cor-card-santo-fundo);
 }
 
+body.modoEscuro section#arquidiocese,
+body.modoEscuro section#catedral,
+body.modoEscuro section#galeria,
+body.modoEscuro section#servicos
+ {
+  color: var(--cor-texto-branco)
+}
+
+
+
 /* ---------- #oracao — fundo fundopediroracao.png ---------- */
 body.modoEscuro section#oracao {
-  background: #0e1218;
-  background-image: none;
+  background: #090c10;
+  background-image: url(../img/fundopediroracao.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+body.modoEscuro section#galeria a{
+  color: #520000
+}
+
+body.modoEscuro section#galeria a:hover{
+  background-color: #8e8e8e
 }
 
 /* ---------- footer — remove footerBG.png decorativo ---------- */
 body.modoEscuro footer {
-  background-image: none;
+ background-color: #320000;
 }
 
 /* ---------- barra de pesquisa ---------- */
 body.modoEscuro #barraPesquisa {
   background-color: var(--cor-pesquisa-fundo);
   color: var(--cor-texto-claro);
+}
+
+body.modoEscuro #formulario input{
+  border: solid 2px #520000;
+}
+
+body.modoEscuro #formulario button:hover{
+  background-color: #320000;
+  cursor: pointer;
 }
