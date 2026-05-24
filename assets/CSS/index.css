@@ -144,6 +144,7 @@ section:nth-of-type(6) article figure figcaption h3 {
 section:nth-of-type(3) article figure img {
   width: min(366px, 100%);
   height: auto;
+  border: 4px solid var(--cor-card-borda);
 }
 
 section:nth-of-type(3) article figure,
@@ -224,6 +225,7 @@ section:nth-of-type(6) article figure {
 section:nth-of-type(6) article figure img {
   width: min(309px, 100%);
   height: auto;
+  border: 4px solid var(--cor-card-borda);
 }
 
 section:nth-of-type(6) article figcaption {

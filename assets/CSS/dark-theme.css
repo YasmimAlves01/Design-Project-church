@@ -4,59 +4,121 @@
 
 body.modoEscuro {
 
-  /* ---------- main.css ---------- */
-  --cor-fundo:              #27282A;
-  --cor-destaque:           #c9a227;
-  --cor-destaque-suave:     #c9a22720;
-  --cor-destaque-hover:     #3a2e0f;
-  --cor-header-fundo:       #00000060;
-  --cor-texto-escuro:       #ffffff;
-  --cor-texto-claro:        #c0b8ae;
+  /* =========================================================
+     MAIN.CSS
+  ========================================================= */
+
+  /* Fundo principal */
+  --cor-fundo:              #151218;
+
+  /* Dourado mais vivo e luxuoso */
+  --cor-destaque:           #d4af63;
+  --cor-destaque-suave:     rgba(214, 184, 106, 0.16);
+  --cor-destaque-hover:     #4b3b1d;
+
+  /* Header */
+  --cor-header-fundo:       rgba(18, 15, 22, 0.82);
+
+  /* Textos */
+  --cor-texto-escuro:       #f8f3ed;
+  --cor-texto-claro:        #ece4d8;
   --cor-texto-branco:       #ffffff;
-  --cor-texto-placeholder:  #9a9690;
-  --cor-menu-fundo:         #1e1c28;
-  --cor-hamburguer-linha:   #e8e2d9;
-  --cor-pesquisa-fundo:     #e5e5e5;
-  --cor-pesquisa-borda:     #c9a227;
-  --cor-footer-fundo:       #3d0000;
-  --cor-foco:               #4d94ff;
-  --cor-foco-sombra:        rgba(77, 148, 255, 0.25);
-  --cor-foco-bg-nav:        rgba(77, 148, 255, 0.10);
+  --cor-texto-placeholder:  #b0a79d;
 
-  /* ---------- index.css ---------- */
-  --cor-card-santo-fundo:     #1e0a00;
-  --cor-card-borda:           #C49F00;
-  --cor-card-fundo:           #2a2215;
-  --cor-servico-fundo:        #141320;
-  --cor-servico-sombra:       #00000060;
-  --cor-oracao-fundo-vidro:   #4a4a4c50;
-  --cor-oracao-borda-vidro:   #e0e0e018;
-  --cor-oracao-hover-sombra:  #c9a22718;
+  /* Menu mobile */
+  --cor-menu-fundo:         #1d1822;
+  --cor-hamburguer-linha:   #f6efe5;
 
-  /* ---------- oracao.css ---------- */
-  --cor-header-sombra:      rgba(255, 255, 255, 0.08);
-  --cor-hamburguer-oracao:  #e8e2d9;
-  --cor-formulario-sombra:  #ffffff18;
-  --cor-botao-fundo:        #9e7e00;
-  --cor-botao-hover-texto:  #f0da70;
-  --cor-links-nav-mobile:   #e8e2d9;
+  /* Pesquisa */
+  --cor-pesquisa-fundo:     #241d28;
+  --cor-pesquisa-borda:     #d4af63;
 
-  /* ---------- acessibilidade.css ---------- */
-  --cor-links-destaque-fundo: #c9a227;
-  --cor-links-destaque-texto: #0d0c0a;
-  --cor-acessibilidade-borda: #3a3730;
-  --cor-acessibilidade-fundo: #1e1c17;
-  --cor-acessibilidade-texto: #e8e2d9;
+  /* Footer */
+  --cor-footer-fundo:       #30161d;
 
-  /* ---------- fundo do body ---------- */
+  /* Foco acessível */
+  --cor-foco:               #8ab8ff;
+  --cor-foco-sombra:        rgba(138, 184, 255, 0.22);
+  --cor-foco-bg-nav:        rgba(138, 184, 255, 0.10);
+
+
+  /* =========================================================
+     INDEX.CSS
+  ========================================================= */
+
+  /* Cards */
+  --cor-card-santo-fundo:     #26181d;
+  --cor-card-borda:           #d4af63;
+  --cor-card-fundo:           #221c26;
+
+  /* Serviços */
+  --cor-servico-fundo:        #1c1721;
+  --cor-servico-sombra:       rgba(0, 0, 0, 0.40);
+
+  /* Área oração / vidro */
+  --cor-oracao-fundo-vidro:   rgba(36, 28, 40, 0.76);
+  --cor-oracao-borda-vidro:   rgba(214, 184, 106, 0.14);
+  --cor-oracao-hover-sombra:  rgba(214, 184, 106, 0.18);
+
+
+  /* =========================================================
+     ORACAO.CSS
+  ========================================================= */
+
+  --cor-header-sombra:      rgba(255, 255, 255, 0.05);
+
+  --cor-hamburguer-oracao:  #f6efe5;
+
+  --cor-formulario-sombra:  rgba(214, 184, 106, 0.10);
+
+  --cor-botao-fundo:        #b8924f;
+  --cor-botao-hover-texto:  #ffe8ae;
+
+  --cor-links-nav-mobile:   #f6efe5;
+
+
+  /* =========================================================
+     ACESSIBILIDADE.CSS
+  ========================================================= */
+
+  --cor-links-destaque-fundo: #d6b86a;
+  --cor-links-destaque-texto: #18130d;
+
+  --cor-acessibilidade-borda: #433848;
+  --cor-acessibilidade-fundo: #211b24;
+  --cor-acessibilidade-texto: #f6efe5;
+
+
+  /* =========================================================
+     FUNDO GERAL
+  ========================================================= */
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(214, 184, 106, 0.12),
+      transparent 38%
+    ),
+    linear-gradient(
+      to bottom,
+      #1b1520,
+      #151218
+    );
+
   background-color: var(--cor-fundo);
-  background-image: none;
+
+  color: var(--cor-texto-escuro);
+}
+
+body.modoEscuro h1, h2
+{
+  text-shadow: 0 0 12px rgba(214, 184, 106, 0.18);
 }
 
 /* ---------- #titulo — hero com headerBG.png ---------- */
 body.modoEscuro section#titulo {
-  background: #1a1814;
-  background-image: url(../img/headerBG.png);
+  background: none;
+  background-image: none;
   background-repeat: no-repeat;
   background-size: 100%;
   color: var( --cor-texto-branco)
@@ -76,7 +138,39 @@ body.modoEscuro section#servicos
   color: var(--cor-texto-branco)
 }
 
+body.modoEscuro section#arquidiocese figure,
+body.modoEscuro section#servicos article,
+body.modoEscuro section#catedral figure 
+{
+  box-shadow: 0 0 18px rgba(214, 184, 106, 0.08);
+}
 
+body.modoEscuro section#arquidiocese figure img,
+body.modoEscuro section#catedral img,
+body.modoEscuro section#catedral img
+{
+  border: none;
+  border:  solid 2px var(--cor-card-borda);
+}
+
+body.modoEscuro section#servicos div article a
+{
+  background-color: #121214;
+  border: #d4af63 3.5px solid;
+  box-shadow: 0 0 12px rgba(214, 184, 106, 0.18);
+}
+
+body.modoEscuro section#servicos div article a:hover
+{
+  background-color: #d4af63;
+  color: #1A1A1E;
+  box-shadow: 0 0 22px rgba(214, 184, 106, 0.28);
+}
+
+body.modoEscuro section#servicos div article img
+{
+  filter: invert();
+}
 
 /* ---------- #oracao — fundo fundopediroracao.png ---------- */
 body.modoEscuro section#oracao {
