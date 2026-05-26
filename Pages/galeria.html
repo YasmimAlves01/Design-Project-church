@@ -42,23 +42,36 @@
         <input type="text" id="barraPesquisa" placeholder="Digite o que você está buscando">
       </nav>
     </header>
-    <div id="barraAcessibilidade">
-      <img src="../assets/img/acessibilidade.png" id="btnAbrir" alt="Menu de Acessibilidade" style="cursor:pointer">
-    
-      <div id="opcoesAcessibilidade" style="display: none;">
-        <button id="aumentarFonte">A+</button>
-        <button id="diminuirFonte">A-</button>
-        <button id="toggleEscuro">Modo Escuro</button>
-        <button id="toggleInverter">Inverter Cores</button>
-        <button id="toggleLinks">Destacar Links</button>
-      </div>
+
+    <div id="flutuantesWrapper" aria-label="Ferramentas de acessibilidade">
+      <div id="barraAcessibilidade">
+
+        <div id="opcoesAcessibilidade" role="menu" aria-hidden="true">
+          <span class="painel-titulo">Acessibilidade</span>
+          <button id="aumentarFonte" role="menuitem" aria-label="Aumentar fonte">A+</button>
+          <button id="diminuirFonte" role="menuitem" aria-label="Diminuir fonte">A−</button>
+          <button id="toggleEscuro" role="menuitem" aria-label="Alternar modo escuro">🌙 Modo Escuro</button>
+          <button id="toggleInverter" role="menuitem" aria-label="Inverter cores">🔄 Inverter Cores</button>
+          <button id="toggleLinks" role="menuitem" aria-label="Destacar links">🔗 Destacar Links</button>
+          <div class="painel-divider"></div>
+          <button id="resetarAcessibilidade" role="menuitem" class="btn-reset" aria-label="Redefinir acessibilidade">↺ Redefinir</button>
+        </div>
+ 
+        <button id="btnAbrir" aria-label="Abrir menu de acessibilidade" aria-expanded="false" aria-controls="opcoesAcessibilidade">
+          <img src="../assets/img/acessibilidade.png" alt="Acessibilidade" class="icone-acessibilidade" >
+        </button>
+    </div>
+ 
+    <div id="vlibrasContainer">
       <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
-      </div>
+        <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+          </div>
+        </div>
       </div>
     </div>
+
     <section id="titulo" aria-label="Apresentação da página">
       <h1>Igreja Católica Apostólica<br> Ortodoxa São Jorge</h1>
       <p>"Em Antioquia, pela primeira vez,<br> foram os discípulos chamados cristãos"</p>

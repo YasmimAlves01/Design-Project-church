@@ -140,6 +140,38 @@ BOTÃO ACESSIBILIDADE
 }
 
 /* =========================================================
+DESTACAR LINKS
+========================================================= */
+
+body.linksDestacados a {
+background-color: #ffd600 !important;
+color: #000 !important;
+
+font-weight: bold !important;
+
+text-decoration: underline !important;
+
+padding: 2px 4px;
+
+border-radius: 4px;
+
+transition:
+background 0.2s,
+color 0.2s;
+}
+
+/* hover */
+body.linksDestacados a:hover {
+background-color: #ffea61 !important;
+}
+
+/* links dentro de botões */
+body.linksDestacados button a {
+background: transparent !important;
+padding: 0;
+}
+
+/* =========================================================
 VLIBRAS
 ========================================================= */
 
@@ -185,30 +217,31 @@ RESPONSIVO
 
 @media (max-width: 480px) {
 
-  #flutuantesWrapper {
-    right: 8px;
-    gap: 30px;
-  }
+#flutuantesWrapper {
+right: 8px;
+gap: 30px;
+}
 
-  #btnAbrir,
-  #vlibrasContainer,
-  body [vw] .vw-access-button {
-    width: 42px !important;
-    height: 42px !important;
-    border-radius: 12px !important;
-  }
+#btnAbrir,
+#vlibrasContainer,
+body [vw] .vw-access-button {
+width: 42px !important;
+height: 42px !important;
+border-radius: 12px !important;
+}
 
-  #opcoesAcessibilidade {
-    width: 170px;
-    right: 50px;
-  }
+#opcoesAcessibilidade {
+width: 170px;
+right: 50px;
+}
+}
 
+/* FECHOU AQUI */
 
 @media (max-height: 400px) {
 
-  #flutuantesWrapper {
-    top: 8px;
-    translate: 0 0;
-  }
+#flutuantesWrapper {
+top: 8px;
+translate: 0 0;
 }
 }
