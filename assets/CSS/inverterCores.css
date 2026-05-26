@@ -1,0 +1,59 @@
+body.inverter{
+     --cor-fundo: #020A13;
+     --cor-de-destaque: #0B279F;
+     --texto-escuro: #FFF;
+     --texto-claro: #0A0A0A;
+     --cor-menu-fundo: #000;
+     --cor-hamburguer-linha: #FFF;
+     --pesquisa-fundo: #000;
+     --pesquisa-borda: #0B279F;
+     --footer-fundo: #A0FFFF;
+
+
+     --card-santo-fundo: #C1E9FF;
+     --borda-card-santo: #A0FFFF;
+     --card-fundo: #0F2446;
+     --servico-fundo: #DDDFD2;
+
+     
+}
+
+body.inverter{
+    background: var(--cor-fundo);
+    color: var(--texto-escuro)
+}
+
+body.inverter #irtopo{
+    background-color: var(--cor-de-destaque);
+}
+
+body.inverter header nav ul li a{
+    color: var(--texto-escuro);
+}
+
+body.inverter footer{
+    background-color: var(--footer-fundo);
+    color: var(--texto-claro)
+}
+
+body.inverter footer a{
+    background-color: var(--footer-fundo);
+    color: var(--texto-claro)
+}
+
+body.inverter section:nth-of-type(2) figure{
+    background-color: var(--card-santo-fundo);
+    color: var(--texto-claro);
+}
+
+body.inverter figure{
+    background-color: var(--card-fundo);
+}
+
+body.inverter section:nth-of-type(3) article a figure {
+    background-color: var(--borda-card-santo);
+}
+
+body.inverter section:nth-of-type(3) article figure figcaption {
+    color: var(--texto-claro);
+}
