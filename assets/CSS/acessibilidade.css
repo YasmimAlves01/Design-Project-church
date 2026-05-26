@@ -1,96 +1,214 @@
-:root {
-  --cor-links-destaque-fundo:  yellow;
-  --cor-links-destaque-texto:  black;
-  --cor-acessibilidade-borda:  #ddd;
-  --cor-acessibilidade-fundo:  #fff;
-  --cor-acessibilidade-texto:  black;
-}
-
-/* =========================================================
-   FILTROS GLOBAIS
-   Aplicados no body, mas cancelados no próprio painel
-========================================================= */
-
-.coresCinza body > *:not(#barraAcessibilidade) {
-  filter: grayscale(100%);
-}
-
-.inverterCores body > *:not(#barraAcessibilidade) {
-  filter: invert(100%);
-}
-
-/* Quando ambos estão ativos ao mesmo tempo */
-.coresCinza.inverterCores body > *:not(#barraAcessibilidade) {
-  filter: grayscale(100%) invert(100%);
-}
-
-.linksDestacados a {
-  background-color: var(--cor-links-destaque-fundo) !important;
-  color: var(--cor-links-destaque-texto) !important;
-  font-weight: bold !important;
-  text-decoration: underline !important;
-}
-
-/* =========================================================
-   BARRA DE ACESSIBILIDADE — flutuante e isolada
-========================================================= */
-
-#barraAcessibilidade {
-  /* Fixo na viewport — completamente fora do fluxo do body */
+#flutuantesWrapper {
   position: fixed;
-  top: 248px;
   right: 10px;
-  z-index: 99999;
-
+  top: 50%;
+  translate: 0 -50%;
   display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 60px;
+  z-index: 99990;
+  pointer-events: none;
+}
 
-  /* Garante contexto de empilhamento próprio */
-  isolation: isolate;
-
-  /* Cancela qualquer filter herdado do body (cinza, inverter) */
-  filter: none !important;
-
-  color: var(--cor-acessibilidade-texto);
-
-  /* Impede que cliques "vazem" para elementos abaixo */
+#flutuantesWrapper > * {
   pointer-events: auto;
 }
 
+/* =========================================================
+BARRA DE ACESSIBILIDADE
+========================================================= */
+
+#barraAcessibilidade {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  isolation: isolate;
+  z-index: 2;
+}
+
+/* =========================================================
+BOTÃO ACESSIBILIDADE
+========================================================= */
 
 #btnAbrir {
   width: 40px;
   height: 40px;
+  margin-right: 10px;
+  border: none;
+  background: #1a1a2e;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  flex-shrink: 0;
-  position: fixed;
-  bottom: 27.21vw;
+  overflow: hidden;
+}
+
+#btnAbrir .icone-acessibilidade {
+  width: 40px;
+  height: 40px;
+  pointer-events: none;
+}
+
+#btnAbrir:hover {
+  transform: scale(1.06);
+}
+
+#btnAbrir:focus-visible {
+  outline: 2px solid #6c63ff;
+  outline-offset: 3px;
+}
+
+#btnAbrir[aria-expanded="true"] {
+  background: #6c63ff;
+  border-color: #5a52e0;
 }
 
 #opcoesAcessibilidade {
-  display: flex;
+  display: none;
   flex-direction: column;
-  border: 1px solid var(--cor-acessibilidade-borda);
-  background-color: var(--cor-acessibilidade-fundo);
-  max-width: 226px;
+  width: 200px;
+  background: #1a1a2e;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 14px;
+  overflow: hidden;
+  position: absolute;
+  right: 52px;
+  top: 0;
+  animation:
+  painelEntrar 0.18s ease-out forwards;
+}
 
-  /* Sem sombra ou efeito que interaja com o restante */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+#opcoesAcessibilidade.aberto {
+  display: flex;
+}
+
+@keyframes painelEntrar {
+  from {
+    opacity: 0;
+    transform:
+    translateX(8px)
+    scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform:
+    translateX(0)
+    scale(1);
+  }
+}
+
+.painel-titulo {
+  padding: 10px 14px 8px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.4);
 }
 
 #opcoesAcessibilidade button {
-  background-color: var(--cor-acessibilidade-fundo);
-  color: var(--cor-acessibilidade-texto);
-  border: 0;
+  background: transparent;
+  color: #e2e8f0;
+  border: none;
   width: 100%;
-  padding: 10px;
-  text-align: center;
-  font-size: 14px;
+  padding: 10px 14px;
+  text-align: left;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background .15s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 #opcoesAcessibilidade button:hover {
-  text-decoration: underline;
-  cursor: pointer;
+  background:rgba(255,255,255,0.07);
 }
 
+.painel-divider {
+  height: 1px;
+  background:rgba(255,255,255,0.1);
+  margin: 4px 0;
+}
+
+.btn-reset {
+  color: #ff6b6b !important;
+}
+
+/* =========================================================
+VLIBRAS
+========================================================= */
+
+#vlibrasContainer {
+  position: relative;
+  width: 44px;
+  height: 44px;
+}
+
+body [vw] .vw-access-button {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: auto !important;
+  bottom: auto !important;
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 14px !important;
+}
+
+/* =========================================================
+RESPONSIVO
+========================================================= */
+
+@media (max-width: 768px) {
+
+  #flutuantesWrapper {
+    right: 12px;
+    gap: 40px;
+  }
+
+  #btnAbrir,
+  #vlibrasContainer,
+  body [vw] .vw-access-button {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  #opcoesAcessibilidade {
+    width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  #flutuantesWrapper {
+    right: 8px;
+    gap: 30px;
+  }
+
+  #btnAbrir,
+  #vlibrasContainer,
+  body [vw] .vw-access-button {
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 12px !important;
+  }
+
+  #opcoesAcessibilidade {
+    width: 170px;
+    right: 50px;
+  }
+
+
+@media (max-height: 400px) {
+
+  #flutuantesWrapper {
+    top: 8px;
+    translate: 0 0;
+  }
+}
+}
