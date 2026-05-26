@@ -48,3 +48,13 @@ document.getElementById('toggleLinks').addEventListener('click', () => {
 document.getElementById('toggleLinks').addEventListener('click', () => {
     document.body.classList.toggle('linksDestacados');
 });
+
+document.getElementById('resetarAcessibilidade').addEventListener('click', () => {
+    // 1. Reseta o tamanho da fonte e a variável
+    tamanhoFonteAtual = 100;
+    document.documentElement.style.fontSize = '';
+    document.body.classList.remove('modoEscuro', 'inverter', 'linksDestacados');
+
+    localStorage.removeItem('modoEscuro');
+    
+});

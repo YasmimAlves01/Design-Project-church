@@ -58,12 +58,14 @@
   pointer-events: auto;
 }
 
+
 #btnAbrir {
   width: 40px;
   height: 40px;
   cursor: pointer;
-  /* Sem border-radius nem fundo — mantém a imagem original */
   flex-shrink: 0;
+  position: fixed;
+  bottom: 27.21vw;
 }
 
 #opcoesAcessibilidade {
@@ -91,3 +93,4 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
