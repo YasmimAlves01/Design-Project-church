@@ -15,6 +15,8 @@ body.inverter{
      --card-fundo: #0F2446;
      --servico-fundo: #DDDFD2;
 
+    --cor-button: #355AFE;
+
      
 }
 
@@ -41,6 +43,10 @@ body.inverter footer a{
     color: var(--texto-claro)
 }
 
+body.inverter footer div{
+    color: var(--texto-claro);
+}
+
 body.inverter section:nth-of-type(2) figure{
     background-color: var(--card-santo-fundo);
     color: var(--texto-claro);
@@ -51,9 +57,53 @@ body.inverter figure{
 }
 
 body.inverter section:nth-of-type(3) article a figure {
-    background-color: var(--borda-card-santo);
+    background-color: var(--card-fundo);
+    border: 4px solid var(--borda-card-santo);
 }
 
 body.inverter section:nth-of-type(3) article figure figcaption {
+    color: var(--texto-escuro);
+}
+
+body.inverter section:nth-of-type(4) div article{
+    background-color: var(--card-fundo);
+    border: 4px solid var(--borda-card-santo);
+    color: var(--texto-escuro);
+
+}
+
+body.inverter section#servicos div article img {
+    filter: invert();
+}
+
+body.inverter section:nth-of-type(4) div article a {
+    background-color: var(--servico-fundo);
     color: var(--texto-claro);
+}
+
+body.inverter section:nth-of-type(4) div article a:hover{
+    background-color: var(--cor-de-destaque);
+    color: var(--servico-fundo);
+}
+
+body.inverter section:nth-of-type(6) article figure{
+    background-color: var(--card-fundo);
+    border: 4px solid var(--borda-card-santo);
+    
+}
+
+body.inverter section:nth-of-type(6) article figure img{
+    border: 4px solid var(--borda-card-santo);
+}
+
+body.inverter section:nth-of-type(6) article figcaption{
+    color: var(--texto-escuro);
+}
+
+body.inverter .dot{
+    border: 3px solid var(--borda-card-santo);
+}
+
+body.inverter button{
+    background-color: var(--cor-button);
 }

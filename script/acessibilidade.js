@@ -52,7 +52,8 @@ document.getElementById('toggleEscuro').addEventListener('click', () => {
 });
 
 document.getElementById('toggleInverter').addEventListener('click', () => {
-    document.body.classList.toggle('inverterCores');
+    const inverterCores = document.body.classList.toggle('inverter')
+    document.body.classList.toggle('inverter', inverterCores);
 });
 
 document.getElementById('toggleLinks').addEventListener('click', () => {
